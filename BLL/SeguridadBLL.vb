@@ -9,6 +9,6 @@
     End Sub
 
     Public Shared Sub restore(ByVal path As String)
-        DAL.BackupDAL.Restore(path)
+        'DAL.BackupDAL.Restore(path)
     End Sub
 End Class
