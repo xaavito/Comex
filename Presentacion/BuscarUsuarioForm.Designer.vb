@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarUsuarioForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class BuscarUsuarioForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarUsuarioForm))
-        Me.EliminarUsuarioButton = New TicketYa.MyButton()
-        Me.ModificarUsuarioButton = New TicketYa.MyButton()
+        Me.EliminarUsuarioButton = New Comex.MyButton()
+        Me.ModificarUsuarioButton = New Comex.MyButton()
         Me.UsuarioLabel = New System.Windows.Forms.Label()
-        Me.UsuarioTextBox = New TicketYa.MyTextBox()
-        Me.BuscarUsuariosButton = New TicketYa.MyButton()
-        Me.UsuariosDataGrid = New TicketYa.MyDataGrid()
+        Me.UsuarioTextBox = New Comex.MyTextBox()
+        Me.BuscarUsuariosButton = New Comex.MyButton()
+        Me.UsuariosDataGrid = New Comex.MyDataGrid()
         Me.identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ActivoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -184,9 +184,9 @@ Partial Class BuscarUsuarioForm
     Friend WithEvents UsuarioColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaAltaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaBajaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BuscarUsuariosButton As TicketYa.MyButton
-    Friend WithEvents UsuariosDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents ModificarUsuarioButton As TicketYa.MyButton
-    Friend WithEvents EliminarUsuarioButton As TicketYa.MyButton
+    Friend WithEvents BuscarUsuariosButton As Comex.MyButton
+    Friend WithEvents UsuariosDataGrid As Comex.MyDataGrid
+    Friend WithEvents ModificarUsuarioButton As Comex.MyButton
+    Friend WithEvents EliminarUsuarioButton As Comex.MyButton
 
 End Class

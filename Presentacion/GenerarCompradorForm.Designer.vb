@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarCompradorForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,35 +17,35 @@ Partial Class GenerarCompradorForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerarCompradorForm))
         Me.PreferenciasLabel = New System.Windows.Forms.Label()
-        Me.PreferenciaComboBox = New TicketYa.MyComboBox()
+        Me.PreferenciaComboBox = New Comex.MyComboBox()
         Me.DireccionLabel = New System.Windows.Forms.Label()
-        Me.DireccionTextBox = New TicketYa.MyTextBox()
+        Me.DireccionTextBox = New Comex.MyTextBox()
         Me.MailLabel = New System.Windows.Forms.Label()
-        Me.MailTextBox = New TicketYa.MyTextBox()
+        Me.MailTextBox = New Comex.MyTextBox()
         Me.ApellidoLabel = New System.Windows.Forms.Label()
-        Me.ApellidoTextBox = New TicketYa.MyTextBox()
+        Me.ApellidoTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
-        Me.GenerarCompradorButton = New TicketYa.MyButton()
-        Me.QuitarPreferenciaButton = New TicketYa.MyButton()
-        Me.AgregarPreferenciaButton = New TicketYa.MyButton()
+        Me.NombreTextBox = New Comex.MyTextBox()
+        Me.GenerarCompradorButton = New Comex.MyButton()
+        Me.QuitarPreferenciaButton = New Comex.MyButton()
+        Me.AgregarPreferenciaButton = New Comex.MyButton()
         Me.FamiliaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PreferenciaDataGrid = New TicketYa.MyDataGrid()
+        Me.PreferenciaDataGrid = New Comex.MyDataGrid()
         Me.NumeroLabel = New System.Windows.Forms.Label()
-        Me.NumeroTextBox = New TicketYa.MyTextBox()
+        Me.NumeroTextBox = New Comex.MyTextBox()
         Me.PisoLabel = New System.Windows.Forms.Label()
-        Me.PisoTextBox = New TicketYa.MyTextBox()
+        Me.PisoTextBox = New Comex.MyTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.CodPostTextBox = New TicketYa.MyTextBox()
+        Me.CodPostTextBox = New Comex.MyTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TelefonoTextBox = New TicketYa.MyTextBox()
+        Me.TelefonoTextBox = New Comex.MyTextBox()
         Me.DptoLabel = New System.Windows.Forms.Label()
-        Me.DptoTextBox = New TicketYa.MyTextBox()
+        Me.DptoTextBox = New Comex.MyTextBox()
         CType(Me.PreferenciaDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -370,30 +370,30 @@ Partial Class GenerarCompradorForm
 
     End Sub
     Friend WithEvents PreferenciasLabel As System.Windows.Forms.Label
-    Friend WithEvents PreferenciaComboBox As TicketYa.MyComboBox
+    Friend WithEvents PreferenciaComboBox As Comex.MyComboBox
     Friend WithEvents DireccionLabel As System.Windows.Forms.Label
-    Friend WithEvents DireccionTextBox As TicketYa.MyTextBox
+    Friend WithEvents DireccionTextBox As Comex.MyTextBox
     Friend WithEvents MailLabel As System.Windows.Forms.Label
-    Friend WithEvents MailTextBox As TicketYa.MyTextBox
+    Friend WithEvents MailTextBox As Comex.MyTextBox
     Friend WithEvents ApellidoLabel As System.Windows.Forms.Label
-    Friend WithEvents ApellidoTextBox As TicketYa.MyTextBox
+    Friend WithEvents ApellidoTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
-    Friend WithEvents GenerarCompradorButton As TicketYa.MyButton
-    Friend WithEvents QuitarPreferenciaButton As TicketYa.MyButton
-    Friend WithEvents AgregarPreferenciaButton As TicketYa.MyButton
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
+    Friend WithEvents GenerarCompradorButton As Comex.MyButton
+    Friend WithEvents QuitarPreferenciaButton As Comex.MyButton
+    Friend WithEvents AgregarPreferenciaButton As Comex.MyButton
     Friend WithEvents FamiliaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Identificador As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PreferenciaDataGrid As TicketYa.MyDataGrid
+    Friend WithEvents PreferenciaDataGrid As Comex.MyDataGrid
     Friend WithEvents NumeroLabel As System.Windows.Forms.Label
-    Friend WithEvents NumeroTextBox As TicketYa.MyTextBox
+    Friend WithEvents NumeroTextBox As Comex.MyTextBox
     Friend WithEvents PisoLabel As System.Windows.Forms.Label
-    Friend WithEvents PisoTextBox As TicketYa.MyTextBox
+    Friend WithEvents PisoTextBox As Comex.MyTextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents CodPostTextBox As TicketYa.MyTextBox
+    Friend WithEvents CodPostTextBox As Comex.MyTextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TelefonoTextBox As TicketYa.MyTextBox
+    Friend WithEvents TelefonoTextBox As Comex.MyTextBox
     Friend WithEvents DptoLabel As System.Windows.Forms.Label
-    Friend WithEvents DptoTextBox As TicketYa.MyTextBox
+    Friend WithEvents DptoTextBox As Comex.MyTextBox
 
 End Class

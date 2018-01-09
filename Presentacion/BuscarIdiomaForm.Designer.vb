@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarIdiomaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class BuscarIdiomaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarIdiomaForm))
-        Me.IdiomaTextBox = New TicketYa.MyTextBox()
+        Me.IdiomaTextBox = New Comex.MyTextBox()
         Me.IdiomaLabel = New System.Windows.Forms.Label()
-        Me.IdiomasDataGrid = New TicketYa.MyDataGrid()
-        Me.ModificarIdiomaButton = New TicketYa.MyButton()
-        Me.EliminarIdiomaButton = New TicketYa.MyButton()
-        Me.BuscarIdiomaButton = New TicketYa.MyButton()
+        Me.IdiomasDataGrid = New Comex.MyDataGrid()
+        Me.ModificarIdiomaButton = New Comex.MyButton()
+        Me.EliminarIdiomaButton = New Comex.MyButton()
+        Me.BuscarIdiomaButton = New Comex.MyButton()
         Me.Identifcador = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.IdiomasDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,10 +136,10 @@ Partial Class BuscarIdiomaForm
     End Sub
     Friend WithEvents IdiomaTextBox As MyTextBox
     Friend WithEvents IdiomaLabel As System.Windows.Forms.Label
-    Friend WithEvents BuscarIdiomaButton As TicketYa.MyButton
-    Friend WithEvents IdiomasDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents EliminarIdiomaButton As TicketYa.MyButton
-    Friend WithEvents ModificarIdiomaButton As TicketYa.MyButton
+    Friend WithEvents BuscarIdiomaButton As Comex.MyButton
+    Friend WithEvents IdiomasDataGrid As Comex.MyDataGrid
+    Friend WithEvents EliminarIdiomaButton As Comex.MyButton
+    Friend WithEvents ModificarIdiomaButton As Comex.MyButton
     Friend WithEvents Identifcador As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 

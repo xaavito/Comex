@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ModificarSedeForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,24 +17,24 @@ Partial Class ModificarSedeForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.AltaSedeButton = New TicketYa.MyButton()
-        Me.TelefonoTextBox = New TicketYa.MyTextBox()
+        Me.AltaSedeButton = New Comex.MyButton()
+        Me.TelefonoTextBox = New Comex.MyTextBox()
         Me.TelefonoLabel = New System.Windows.Forms.Label()
-        Me.NumeroTextBox = New TicketYa.MyTextBox()
+        Me.NumeroTextBox = New Comex.MyTextBox()
         Me.NumeroLabel = New System.Windows.Forms.Label()
-        Me.DireccionTextBox = New TicketYa.MyTextBox()
+        Me.DireccionTextBox = New Comex.MyTextBox()
         Me.DireccionLabel = New System.Windows.Forms.Label()
-        Me.CapacidadTexBox = New TicketYa.MyTextBox()
+        Me.CapacidadTexBox = New Comex.MyTextBox()
         Me.CapacidadLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'AltaSedeButton
         '
-        Me.AltaSedeButton.Image = Global.TicketYa.My.Resources.Resources.save
+        Me.AltaSedeButton.Image = Global.Comex.My.Resources.Resources.save
         Me.AltaSedeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaSedeButton.Location = New System.Drawing.Point(244, 4)
         Me.AltaSedeButton.Name = "AltaSedeButton"
@@ -175,16 +175,16 @@ Partial Class ModificarSedeForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents AltaSedeButton As TicketYa.MyButton
-    Friend WithEvents TelefonoTextBox As TicketYa.MyTextBox
+    Friend WithEvents AltaSedeButton As Comex.MyButton
+    Friend WithEvents TelefonoTextBox As Comex.MyTextBox
     Friend WithEvents TelefonoLabel As System.Windows.Forms.Label
-    Friend WithEvents NumeroTextBox As TicketYa.MyTextBox
+    Friend WithEvents NumeroTextBox As Comex.MyTextBox
     Friend WithEvents NumeroLabel As System.Windows.Forms.Label
-    Friend WithEvents DireccionTextBox As TicketYa.MyTextBox
+    Friend WithEvents DireccionTextBox As Comex.MyTextBox
     Friend WithEvents DireccionLabel As System.Windows.Forms.Label
-    Friend WithEvents CapacidadTexBox As TicketYa.MyTextBox
+    Friend WithEvents CapacidadTexBox As Comex.MyTextBox
     Friend WithEvents CapacidadLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
 
 End Class

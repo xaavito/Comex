@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarFechaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class GenerarFechaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
+        Me.ShowComboBox = New Comex.MyComboBox()
         Me.FechaLabel = New System.Windows.Forms.Label()
         Me.ShowLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.AltaFechaButton = New TicketYa.MyButton()
-        Me.FechaTextBox = New TicketYa.MyMaskedTextBox()
+        Me.AltaFechaButton = New Comex.MyButton()
+        Me.FechaTextBox = New Comex.MyMaskedTextBox()
         Me.SuspendLayout()
         '
         'ShowComboBox
@@ -81,7 +81,7 @@ Partial Class GenerarFechaForm
         '
         'AltaFechaButton
         '
-        Me.AltaFechaButton.Image = Global.TicketYa.My.Resources.Resources.aceptar
+        Me.AltaFechaButton.Image = Global.Comex.My.Resources.Resources.aceptar
         Me.AltaFechaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaFechaButton.Location = New System.Drawing.Point(303, 15)
         Me.AltaFechaButton.Name = "AltaFechaButton"
@@ -116,12 +116,12 @@ Partial Class GenerarFechaForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents AltaFechaButton As TicketYa.MyButton
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
+    Friend WithEvents AltaFechaButton As Comex.MyButton
     Friend WithEvents FechaLabel As System.Windows.Forms.Label
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
-    Friend WithEvents FechaTextBox As TicketYa.MyMaskedTextBox
+    Friend WithEvents FechaTextBox As Comex.MyMaskedTextBox
 
 End Class

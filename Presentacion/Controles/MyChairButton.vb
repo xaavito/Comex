@@ -10,21 +10,21 @@
         Me.miSilla = silla
 
         If Me.miSilla.estado.descripcion = 1 Then
-            Me.Image = TicketYa.My.Resources.Resources.chair_icon_libre
+            Me.Image = Comex.My.Resources.Resources.chair_icon_libre
         ElseIf Me.miSilla.estado.descripcion = 2 Then
-            Me.Image = TicketYa.My.Resources.Resources.chair_icon_resevada
+            Me.Image = Comex.My.Resources.Resources.chair_icon_resevada
         ElseIf Me.miSilla.estado.descripcion = 3 Then
-            Me.Image = TicketYa.My.Resources.Resources.chair_icon_ocupada
+            Me.Image = Comex.My.Resources.Resources.chair_icon_ocupada
         End If
     End Sub
 
     Private Sub MyChairButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Click
         Try
             If Me.miSilla.estado.descripcion = 1 Then
-                Me.Image = TicketYa.My.Resources.Resources.chair_icon_seleccionada
+                Me.Image = Comex.My.Resources.Resources.chair_icon_seleccionada
                 addToForm()
             ElseIf Me.miSilla.estado.descripcion = 2 Then
-                Me.Image = TicketYa.My.Resources.Resources.chair_icon_seleccionada
+                Me.Image = Comex.My.Resources.Resources.chair_icon_seleccionada
                 addToForm()
                 Throw New Excepciones.SillaYaReservadaExcepcion
             ElseIf Me.miSilla.estado.descripcion = 3 Then

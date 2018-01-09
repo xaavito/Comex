@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ModificarFamiliaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,12 +17,12 @@ Partial Class ModificarFamiliaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarFamiliaForm))
         Me.FamiliaLabel = New System.Windows.Forms.Label()
-        Me.FamiliaTextBox = New TicketYa.MyTextBox()
-        Me.ModificarFamiliaButton = New TicketYa.MyButton()
+        Me.FamiliaTextBox = New Comex.MyTextBox()
+        Me.ModificarFamiliaButton = New Comex.MyButton()
         Me.SuspendLayout()
         '
         'FamiliaLabel
@@ -75,6 +75,6 @@ Partial Class ModificarFamiliaForm
     End Sub
     Friend WithEvents FamiliaLabel As System.Windows.Forms.Label
     Friend WithEvents FamiliaTextBox As MyTextBox
-    Friend WithEvents ModificarFamiliaButton As TicketYa.MyButton
+    Friend WithEvents ModificarFamiliaButton As Comex.MyButton
 
 End Class

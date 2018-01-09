@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarIdiomaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,14 +17,14 @@ Partial Class GenerarIdiomaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerarIdiomaForm))
         Me.IdiomaComboBox = New MyComboBox()
         Me.IdiomaBaseLabel = New System.Windows.Forms.Label()
-        Me.GenerarIdiomaButton = New TicketYa.MyButton()
+        Me.GenerarIdiomaButton = New Comex.MyButton()
         Me.NombreIdiomaLabel = New System.Windows.Forms.Label()
-        Me.IdiomaTextBox = New TicketYa.MyTextBox()
+        Me.IdiomaTextBox = New Comex.MyTextBox()
         Me.SuspendLayout()
         '
         'IdiomaComboBox
@@ -94,6 +94,6 @@ Partial Class GenerarIdiomaForm
     Friend WithEvents IdiomaBaseLabel As System.Windows.Forms.Label
     Friend WithEvents NombreIdiomaLabel As System.Windows.Forms.Label
     Friend WithEvents IdiomaTextBox As MyTextBox
-    Friend WithEvents GenerarIdiomaButton As TicketYa.MyButton
+    Friend WithEvents GenerarIdiomaButton As Comex.MyButton
 
 End Class

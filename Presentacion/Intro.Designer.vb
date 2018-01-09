@@ -101,7 +101,7 @@ Partial Class Intro
         Me.ApplicationTitle.Name = "ApplicationTitle"
         Me.ApplicationTitle.Size = New System.Drawing.Size(247, 212)
         Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "TicketYa"
+        Me.ApplicationTitle.Text = "Comex"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'Intro

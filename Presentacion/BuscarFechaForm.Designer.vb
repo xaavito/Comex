@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarFechaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,21 +17,21 @@ Partial Class BuscarFechaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.FechasDataGrid = New TicketYa.MyDataGrid()
+        Me.FechasDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EliminarFechaButton = New TicketYa.MyButton()
-        Me.ModificarFechaButton = New TicketYa.MyButton()
-        Me.BuscarFechaButton = New TicketYa.MyButton()
+        Me.EliminarFechaButton = New Comex.MyButton()
+        Me.ModificarFechaButton = New Comex.MyButton()
+        Me.BuscarFechaButton = New Comex.MyButton()
         Me.FechaDesdeLabel = New System.Windows.Forms.Label()
-        Me.FechaDesdeTextBox = New TicketYa.MyMaskedTextBox()
-        Me.FechaHastaTextBox = New TicketYa.MyMaskedTextBox()
+        Me.FechaDesdeTextBox = New Comex.MyMaskedTextBox()
+        Me.FechaHastaTextBox = New Comex.MyMaskedTextBox()
         Me.FechaHastaLabel = New System.Windows.Forms.Label()
-        Me.ReportesButton = New TicketYa.MyButton()
-        Me.ShowTextBox = New TicketYa.MyTextBox()
+        Me.ReportesButton = New Comex.MyButton()
+        Me.ShowTextBox = New Comex.MyTextBox()
         Me.ShowLabel = New System.Windows.Forms.Label()
         CType(Me.FechasDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -76,7 +76,7 @@ Partial Class BuscarFechaForm
         '
         'EliminarFechaButton
         '
-        Me.EliminarFechaButton.Image = Global.TicketYa.My.Resources.Resources.basura
+        Me.EliminarFechaButton.Image = Global.Comex.My.Resources.Resources.basura
         Me.EliminarFechaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EliminarFechaButton.Location = New System.Drawing.Point(513, 136)
         Me.EliminarFechaButton.Name = "EliminarFechaButton"
@@ -88,7 +88,7 @@ Partial Class BuscarFechaForm
         '
         'ModificarFechaButton
         '
-        Me.ModificarFechaButton.Image = Global.TicketYa.My.Resources.Resources.editar
+        Me.ModificarFechaButton.Image = Global.Comex.My.Resources.Resources.editar
         Me.ModificarFechaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarFechaButton.Location = New System.Drawing.Point(513, 80)
         Me.ModificarFechaButton.Name = "ModificarFechaButton"
@@ -100,7 +100,7 @@ Partial Class BuscarFechaForm
         '
         'BuscarFechaButton
         '
-        Me.BuscarFechaButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarFechaButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarFechaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarFechaButton.Location = New System.Drawing.Point(513, 16)
         Me.BuscarFechaButton.Name = "BuscarFechaButton"
@@ -148,7 +148,7 @@ Partial Class BuscarFechaForm
         '
         'ReportesButton
         '
-        Me.ReportesButton.Image = Global.TicketYa.My.Resources.Resources.Graphics_icon
+        Me.ReportesButton.Image = Global.Comex.My.Resources.Resources.Graphics_icon
         Me.ReportesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ReportesButton.Location = New System.Drawing.Point(513, 197)
         Me.ReportesButton.Name = "ReportesButton"
@@ -202,19 +202,19 @@ Partial Class BuscarFechaForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents EliminarFechaButton As TicketYa.MyButton
-    Friend WithEvents ModificarFechaButton As TicketYa.MyButton
-    Friend WithEvents FechasDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarFechaButton As TicketYa.MyButton
+    Friend WithEvents EliminarFechaButton As Comex.MyButton
+    Friend WithEvents ModificarFechaButton As Comex.MyButton
+    Friend WithEvents FechasDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarFechaButton As Comex.MyButton
     Friend WithEvents FechaDesdeLabel As System.Windows.Forms.Label
-    Friend WithEvents FechaDesdeTextBox As TicketYa.MyMaskedTextBox
-    Friend WithEvents FechaHastaTextBox As TicketYa.MyMaskedTextBox
+    Friend WithEvents FechaDesdeTextBox As Comex.MyMaskedTextBox
+    Friend WithEvents FechaHastaTextBox As Comex.MyMaskedTextBox
     Friend WithEvents FechaHastaLabel As System.Windows.Forms.Label
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ReportesButton As TicketYa.MyButton
-    Friend WithEvents ShowTextBox As TicketYa.MyTextBox
+    Friend WithEvents ReportesButton As Comex.MyButton
+    Friend WithEvents ShowTextBox As Comex.MyTextBox
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
 
 End Class

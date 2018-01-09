@@ -21,7 +21,7 @@ Public Class frmSQLConnectionDialogNewDB
             Cursor.Current = Cursors.WaitCursor
             Try
                 Dim slqman As New RepositorioSQLite()
-                slqman.CreateDataBase(txtBase.Text, RootPath + "sql\ticketya.sql", conn)
+                slqman.CreateDataBase(txtBase.Text, RootPath + "sql\Comex.sql", conn)
                 MessageBox.Show(String.Format("La base de datos '{0}' fue creada satisfactoriamente", txtBase.Text))
                 Me.Close()
                 Me.DialogResult = Windows.Forms.DialogResult.OK

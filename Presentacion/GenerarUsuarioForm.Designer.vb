@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarUsuarioForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,27 +17,27 @@ Partial Class GenerarUsuarioForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerarUsuarioForm))
-        Me.GenerarUsuarioButton = New TicketYa.MyButton()
-        Me.UsuarioTextBox = New TicketYa.MyTextBox()
+        Me.GenerarUsuarioButton = New Comex.MyButton()
+        Me.UsuarioTextBox = New Comex.MyTextBox()
         Me.UsuarioLabel = New System.Windows.Forms.Label()
         Me.PassLabel = New System.Windows.Forms.Label()
-        Me.PassTextBox = New TicketYa.MyTextBox()
+        Me.PassTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.ApellidoLabel = New System.Windows.Forms.Label()
-        Me.ApellidoTextBox = New TicketYa.MyTextBox()
+        Me.ApellidoTextBox = New Comex.MyTextBox()
         Me.FamiliaComboBox = New MyComboBox()
         Me.FamiliaLabel = New System.Windows.Forms.Label()
-        Me.FamiliaDataGrid = New TicketYa.MyDataGrid()
+        Me.FamiliaDataGrid = New Comex.MyDataGrid()
         Me.Identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FamiliaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdiomaLabel = New System.Windows.Forms.Label()
         Me.IdiomaComboBox = New MyComboBox()
-        Me.AgregarFamiliaButton = New TicketYa.MyButton()
-        Me.QuitarFamiliaButton = New TicketYa.MyButton()
+        Me.AgregarFamiliaButton = New Comex.MyButton()
+        Me.QuitarFamiliaButton = New Comex.MyButton()
         CType(Me.FamiliaDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -261,9 +261,9 @@ Partial Class GenerarUsuarioForm
     Friend WithEvents IdiomaComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents Identificador As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FamiliaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GenerarUsuarioButton As TicketYa.MyButton
-    Friend WithEvents FamiliaDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents AgregarFamiliaButton As TicketYa.MyButton
-    Friend WithEvents QuitarFamiliaButton As TicketYa.MyButton
+    Friend WithEvents GenerarUsuarioButton As Comex.MyButton
+    Friend WithEvents FamiliaDataGrid As Comex.MyDataGrid
+    Friend WithEvents AgregarFamiliaButton As Comex.MyButton
+    Friend WithEvents QuitarFamiliaButton As Comex.MyButton
 
 End Class

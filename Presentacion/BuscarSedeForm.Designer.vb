@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarSedeForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,14 +17,14 @@ Partial Class BuscarSedeForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.SedeLabel = New System.Windows.Forms.Label()
-        Me.SedeTextBox = New TicketYa.MyTextBox()
-        Me.BuscarSedeButton = New TicketYa.MyButton()
-        Me.SedesDataGrid = New TicketYa.MyDataGrid()
-        Me.ModificarSedeButton = New TicketYa.MyButton()
-        Me.EliminarSedeButton = New TicketYa.MyButton()
+        Me.SedeTextBox = New Comex.MyTextBox()
+        Me.BuscarSedeButton = New Comex.MyButton()
+        Me.SedesDataGrid = New Comex.MyDataGrid()
+        Me.ModificarSedeButton = New Comex.MyButton()
+        Me.EliminarSedeButton = New Comex.MyButton()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CapacidadColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,7 +58,7 @@ Partial Class BuscarSedeForm
         '
         'BuscarSedeButton
         '
-        Me.BuscarSedeButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarSedeButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarSedeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarSedeButton.Location = New System.Drawing.Point(499, 24)
         Me.BuscarSedeButton.Name = "BuscarSedeButton"
@@ -86,7 +86,7 @@ Partial Class BuscarSedeForm
         '
         'ModificarSedeButton
         '
-        Me.ModificarSedeButton.Image = Global.TicketYa.My.Resources.Resources.editar
+        Me.ModificarSedeButton.Image = Global.Comex.My.Resources.Resources.editar
         Me.ModificarSedeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarSedeButton.Location = New System.Drawing.Point(499, 88)
         Me.ModificarSedeButton.Name = "ModificarSedeButton"
@@ -98,7 +98,7 @@ Partial Class BuscarSedeForm
         '
         'EliminarSedeButton
         '
-        Me.EliminarSedeButton.Image = Global.TicketYa.My.Resources.Resources.basura
+        Me.EliminarSedeButton.Image = Global.Comex.My.Resources.Resources.basura
         Me.EliminarSedeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EliminarSedeButton.Location = New System.Drawing.Point(499, 164)
         Me.EliminarSedeButton.Name = "EliminarSedeButton"
@@ -169,11 +169,11 @@ Partial Class BuscarSedeForm
 
     End Sub
     Friend WithEvents SedeLabel As System.Windows.Forms.Label
-    Friend WithEvents SedeTextBox As TicketYa.MyTextBox
-    Friend WithEvents BuscarSedeButton As TicketYa.MyButton
-    Friend WithEvents SedesDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents ModificarSedeButton As TicketYa.MyButton
-    Friend WithEvents EliminarSedeButton As TicketYa.MyButton
+    Friend WithEvents SedeTextBox As Comex.MyTextBox
+    Friend WithEvents BuscarSedeButton As Comex.MyButton
+    Friend WithEvents SedesDataGrid As Comex.MyDataGrid
+    Friend WithEvents ModificarSedeButton As Comex.MyButton
+    Friend WithEvents EliminarSedeButton As Comex.MyButton
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CapacidadColumn As System.Windows.Forms.DataGridViewTextBoxColumn

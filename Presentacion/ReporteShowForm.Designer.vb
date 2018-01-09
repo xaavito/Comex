@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ReporteShowForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -31,7 +31,7 @@ Partial Class ReporteShowForm
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.ShowReporteBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "TicketYa.ReporteShow.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Comex.ReporteShow.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(13, 13)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(894, 247)

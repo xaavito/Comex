@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarSectorForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,22 +17,22 @@ Partial Class GenerarSectorForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
+        Me.ShowComboBox = New Comex.MyComboBox()
         Me.FechaLabel = New System.Windows.Forms.Label()
         Me.ShowLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.AltaSectorButton = New TicketYa.MyButton()
-        Me.FechaComboBox = New TicketYa.MyComboBox()
-        Me.TipoSectorComboBox = New TicketYa.MyComboBox()
+        Me.AltaSectorButton = New Comex.MyButton()
+        Me.FechaComboBox = New Comex.MyComboBox()
+        Me.TipoSectorComboBox = New Comex.MyComboBox()
         Me.TipoSectorLabel = New System.Windows.Forms.Label()
-        Me.FilasTextBox = New TicketYa.MyTextBox()
+        Me.FilasTextBox = New Comex.MyTextBox()
         Me.FilaLabel = New System.Windows.Forms.Label()
-        Me.ColumnasTextBox = New TicketYa.MyTextBox()
+        Me.ColumnasTextBox = New Comex.MyTextBox()
         Me.ColumnaLabel = New System.Windows.Forms.Label()
-        Me.PrecioTextBox = New TicketYa.MyTextBox()
+        Me.PrecioTextBox = New Comex.MyTextBox()
         Me.PrecioLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -90,7 +90,7 @@ Partial Class GenerarSectorForm
         '
         'AltaSectorButton
         '
-        Me.AltaSectorButton.Image = Global.TicketYa.My.Resources.Resources.aceptar
+        Me.AltaSectorButton.Image = Global.Comex.My.Resources.Resources.aceptar
         Me.AltaSectorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaSectorButton.Location = New System.Drawing.Point(321, 12)
         Me.AltaSectorButton.Name = "AltaSectorButton"
@@ -225,20 +225,20 @@ Partial Class GenerarSectorForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents AltaSectorButton As TicketYa.MyButton
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
+    Friend WithEvents AltaSectorButton As Comex.MyButton
     Friend WithEvents FechaLabel As System.Windows.Forms.Label
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
-    Friend WithEvents FechaComboBox As TicketYa.MyComboBox
-    Friend WithEvents TipoSectorComboBox As TicketYa.MyComboBox
+    Friend WithEvents FechaComboBox As Comex.MyComboBox
+    Friend WithEvents TipoSectorComboBox As Comex.MyComboBox
     Friend WithEvents TipoSectorLabel As System.Windows.Forms.Label
-    Friend WithEvents FilasTextBox As TicketYa.MyTextBox
+    Friend WithEvents FilasTextBox As Comex.MyTextBox
     Friend WithEvents FilaLabel As System.Windows.Forms.Label
-    Friend WithEvents ColumnasTextBox As TicketYa.MyTextBox
+    Friend WithEvents ColumnasTextBox As Comex.MyTextBox
     Friend WithEvents ColumnaLabel As System.Windows.Forms.Label
-    Friend WithEvents PrecioTextBox As TicketYa.MyTextBox
+    Friend WithEvents PrecioTextBox As Comex.MyTextBox
     Friend WithEvents PrecioLabel As System.Windows.Forms.Label
 
 End Class

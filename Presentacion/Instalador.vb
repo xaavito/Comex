@@ -15,7 +15,7 @@ Public Class Instalador
     Private Sub Instalador_AfterInstall(sender As Object, e As System.Configuration.Install.InstallEventArgs) Handles Me.AfterInstall
         Dim TargetDirectory As String = Path.GetDirectoryName(Context.Parameters("AssemblyPath"))
 
-        Dim config As Configuration = ConfigurationManager.OpenExeConfiguration(String.Format("{0}\TicketYa.exe", TargetDirectory))
+        Dim config As Configuration = ConfigurationManager.OpenExeConfiguration(String.Format("{0}\Comex.exe", TargetDirectory))
         Dim dialog As New frmSQLConnectionDialog()
         dialog.ConnectionString = config.ConnectionStrings.ConnectionStrings("conn").ConnectionString
         dialog.RootPath = TargetDirectory + "\"

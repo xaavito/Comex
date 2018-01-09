@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarBitacoraForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class BuscarBitacoraForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarBitacoraForm))
-        Me.TipoBitacoraComboBox = New TicketYa.MyComboBox()
-        Me.UsuarioComboBox = New TicketYa.MyComboBox()
-        Me.BuscarBitacoraButton = New TicketYa.MyButton()
+        Me.TipoBitacoraComboBox = New Comex.MyComboBox()
+        Me.UsuarioComboBox = New Comex.MyComboBox()
+        Me.BuscarBitacoraButton = New Comex.MyButton()
         Me.TipoLabel = New System.Windows.Forms.Label()
         Me.UsuarioLabel = New System.Windows.Forms.Label()
-        Me.BitacorasDataGrid = New TicketYa.MyDataGrid()
+        Me.BitacorasDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -150,9 +150,9 @@ Partial Class BuscarBitacoraForm
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TipoColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BitacorasDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarBitacoraButton As TicketYa.MyButton
-    Friend WithEvents UsuarioComboBox As TicketYa.MyComboBox
-    Friend WithEvents TipoBitacoraComboBox As TicketYa.MyComboBox
+    Friend WithEvents BitacorasDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarBitacoraButton As Comex.MyButton
+    Friend WithEvents UsuarioComboBox As Comex.MyComboBox
+    Friend WithEvents TipoBitacoraComboBox As Comex.MyComboBox
 
 End Class

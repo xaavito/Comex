@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ModificarShowForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,14 +17,14 @@ Partial Class ModificarShowForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.SedeComboBox = New TicketYa.MyComboBox()
-        Me.TipoShowComboBox = New TicketYa.MyComboBox()
-        Me.AltaShowButton = New TicketYa.MyButton()
+        Me.SedeComboBox = New Comex.MyComboBox()
+        Me.TipoShowComboBox = New Comex.MyComboBox()
+        Me.AltaShowButton = New Comex.MyButton()
         Me.SedeLabel = New System.Windows.Forms.Label()
         Me.TipoLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -52,7 +52,7 @@ Partial Class ModificarShowForm
         '
         'AltaShowButton
         '
-        Me.AltaShowButton.Image = Global.TicketYa.My.Resources.Resources.save
+        Me.AltaShowButton.Image = Global.Comex.My.Resources.Resources.save
         Me.AltaShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaShowButton.Location = New System.Drawing.Point(301, 10)
         Me.AltaShowButton.Name = "AltaShowButton"
@@ -119,12 +119,12 @@ Partial Class ModificarShowForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SedeComboBox As TicketYa.MyComboBox
-    Friend WithEvents TipoShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents AltaShowButton As TicketYa.MyButton
+    Friend WithEvents SedeComboBox As Comex.MyComboBox
+    Friend WithEvents TipoShowComboBox As Comex.MyComboBox
+    Friend WithEvents AltaShowButton As Comex.MyButton
     Friend WithEvents SedeLabel As System.Windows.Forms.Label
     Friend WithEvents TipoLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
 
 End Class

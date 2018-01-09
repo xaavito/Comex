@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarFamiliaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class BuscarFamiliaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarFamiliaForm))
-        Me.EliminarFamiliaButton = New TicketYa.MyButton()
-        Me.ModificarFamiliaButton = New TicketYa.MyButton()
+        Me.EliminarFamiliaButton = New Comex.MyButton()
+        Me.ModificarFamiliaButton = New Comex.MyButton()
         Me.FamiliaLabel = New System.Windows.Forms.Label()
-        Me.FamiliaTextBox = New TicketYa.MyTextBox()
-        Me.BuscarFamiliasButton = New TicketYa.MyButton()
-        Me.FamiliasDataGrid = New TicketYa.MyDataGrid()
+        Me.FamiliaTextBox = New Comex.MyTextBox()
+        Me.BuscarFamiliasButton = New Comex.MyButton()
+        Me.FamiliasDataGrid = New Comex.MyDataGrid()
         Me.identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.FamiliasDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,9 +139,9 @@ Partial Class BuscarFamiliaForm
     Friend WithEvents FamiliaTextBox As MyTextBox
     Friend WithEvents identificador As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EliminarFamiliaButton As TicketYa.MyButton
-    Friend WithEvents ModificarFamiliaButton As TicketYa.MyButton
-    Friend WithEvents BuscarFamiliasButton As TicketYa.MyButton
-    Friend WithEvents FamiliasDataGrid As TicketYa.MyDataGrid
+    Friend WithEvents EliminarFamiliaButton As Comex.MyButton
+    Friend WithEvents ModificarFamiliaButton As Comex.MyButton
+    Friend WithEvents BuscarFamiliasButton As Comex.MyButton
+    Friend WithEvents FamiliasDataGrid As Comex.MyDataGrid
 
 End Class

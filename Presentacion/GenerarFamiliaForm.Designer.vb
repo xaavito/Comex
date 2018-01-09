@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarFamiliaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,11 +17,11 @@ Partial Class GenerarFamiliaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.FamiliaLabel = New System.Windows.Forms.Label()
-        Me.FamiliaTextBox = New TicketYa.MyTextBox()
-        Me.AltaFamiliaButton = New TicketYa.MyButton()
+        Me.FamiliaTextBox = New Comex.MyTextBox()
+        Me.AltaFamiliaButton = New Comex.MyButton()
         Me.SuspendLayout()
         '
         'FamiliaLabel
@@ -49,7 +49,7 @@ Partial Class GenerarFamiliaForm
         '
         'AltaFamiliaButton
         '
-        Me.AltaFamiliaButton.Image = Global.TicketYa.My.Resources.Resources.aceptar
+        Me.AltaFamiliaButton.Image = Global.Comex.My.Resources.Resources.aceptar
         Me.AltaFamiliaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaFamiliaButton.Location = New System.Drawing.Point(360, 24)
         Me.AltaFamiliaButton.Name = "AltaFamiliaButton"
@@ -75,6 +75,6 @@ Partial Class GenerarFamiliaForm
     End Sub
     Friend WithEvents FamiliaLabel As System.Windows.Forms.Label
     Friend WithEvents FamiliaTextBox As MyTextBox
-    Friend WithEvents AltaFamiliaButton As TicketYa.MyButton
+    Friend WithEvents AltaFamiliaButton As Comex.MyButton
 
 End Class

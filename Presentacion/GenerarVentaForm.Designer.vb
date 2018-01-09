@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarVentaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,32 +17,32 @@ Partial Class GenerarVentaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ApellidoLabel = New System.Windows.Forms.Label()
-        Me.ApellidoTextBox = New TicketYa.MyTextBox()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
-        Me.CompradoresComboBox = New TicketYa.MyComboBox()
+        Me.ApellidoTextBox = New Comex.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
+        Me.CompradoresComboBox = New Comex.MyComboBox()
         Me.CompradorGroupBox = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.NumeroCompradorTextBox = New TicketYa.MyTextBox()
+        Me.NumeroCompradorTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.NuevoCompradorButton = New TicketYa.MyButton()
-        Me.BuscarCompradorButton = New TicketYa.MyButton()
+        Me.NuevoCompradorButton = New Comex.MyButton()
+        Me.BuscarCompradorButton = New Comex.MyButton()
         Me.ShowGroupBox = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.FechaComboBox = New TicketYa.MyComboBox()
+        Me.FechaComboBox = New Comex.MyComboBox()
         Me.ShowLabel = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.BuscarShowButton = New TicketYa.MyButton()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
-        Me.ShowTextBox = New TicketYa.MyTextBox()
+        Me.BuscarShowButton = New Comex.MyButton()
+        Me.ShowComboBox = New Comex.MyComboBox()
+        Me.ShowTextBox = New Comex.MyTextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel = New System.Windows.Forms.Panel()
-        Me.SectorComboBox = New TicketYa.MyComboBox()
+        Me.SectorComboBox = New Comex.MyComboBox()
         Me.SectorLabel = New System.Windows.Forms.Label()
-        Me.VentaDataGrid = New TicketYa.MyDataGrid()
+        Me.VentaDataGrid = New Comex.MyDataGrid()
         Me.idSilla = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idSector = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idShow = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -53,16 +53,16 @@ Partial Class GenerarVentaForm
         Me.FilaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AceptarButton = New TicketYa.MyButton()
-        Me.CancelarButton = New TicketYa.MyButton()
-        Me.SubTotalTextBox = New TicketYa.MyTextBox()
+        Me.AceptarButton = New Comex.MyButton()
+        Me.CancelarButton = New Comex.MyButton()
+        Me.SubTotalTextBox = New Comex.MyTextBox()
         Me.SubTotalLabel = New System.Windows.Forms.Label()
         Me.DescuentoLabel = New System.Windows.Forms.Label()
-        Me.DescuentoTextBox = New TicketYa.MyTextBox()
+        Me.DescuentoTextBox = New Comex.MyTextBox()
         Me.TotalLabel = New System.Windows.Forms.Label()
-        Me.TotalTextBox = New TicketYa.MyTextBox()
+        Me.TotalTextBox = New Comex.MyTextBox()
         Me.PromocionLabel = New System.Windows.Forms.Label()
-        Me.PromocionComboBox = New TicketYa.MyComboBox()
+        Me.PromocionComboBox = New Comex.MyComboBox()
         Me.EfectivoCheckBox = New System.Windows.Forms.CheckBox()
         Me.CompradorGroupBox.SuspendLayout()
         Me.ShowGroupBox.SuspendLayout()
@@ -167,7 +167,7 @@ Partial Class GenerarVentaForm
         '
         'NuevoCompradorButton
         '
-        Me.NuevoCompradorButton.Image = Global.TicketYa.My.Resources.Resources.nuevo
+        Me.NuevoCompradorButton.Image = Global.Comex.My.Resources.Resources.nuevo
         Me.NuevoCompradorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.NuevoCompradorButton.Location = New System.Drawing.Point(675, 10)
         Me.NuevoCompradorButton.Name = "NuevoCompradorButton"
@@ -179,7 +179,7 @@ Partial Class GenerarVentaForm
         '
         'BuscarCompradorButton
         '
-        Me.BuscarCompradorButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarCompradorButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarCompradorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarCompradorButton.Location = New System.Drawing.Point(276, 43)
         Me.BuscarCompradorButton.Name = "BuscarCompradorButton"
@@ -254,7 +254,7 @@ Partial Class GenerarVentaForm
         '
         'BuscarShowButton
         '
-        Me.BuscarShowButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarShowButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarShowButton.Location = New System.Drawing.Point(276, 19)
         Me.BuscarShowButton.Name = "BuscarShowButton"
@@ -409,7 +409,7 @@ Partial Class GenerarVentaForm
         '
         'AceptarButton
         '
-        Me.AceptarButton.Image = Global.TicketYa.My.Resources.Resources.aceptar
+        Me.AceptarButton.Image = Global.Comex.My.Resources.Resources.aceptar
         Me.AceptarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AceptarButton.Location = New System.Drawing.Point(305, 750)
         Me.AceptarButton.Name = "AceptarButton"
@@ -421,7 +421,7 @@ Partial Class GenerarVentaForm
         '
         'CancelarButton
         '
-        Me.CancelarButton.Image = Global.TicketYa.My.Resources.Resources.cancelar
+        Me.CancelarButton.Image = Global.Comex.My.Resources.Resources.cancelar
         Me.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CancelarButton.Location = New System.Drawing.Point(495, 750)
         Me.CancelarButton.Name = "CancelarButton"
@@ -559,32 +559,32 @@ Partial Class GenerarVentaForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents NuevoCompradorButton As TicketYa.MyButton
+    Friend WithEvents NuevoCompradorButton As Comex.MyButton
     Friend WithEvents ApellidoLabel As System.Windows.Forms.Label
-    Friend WithEvents ApellidoTextBox As TicketYa.MyTextBox
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
-    Friend WithEvents CompradoresComboBox As TicketYa.MyComboBox
-    Friend WithEvents BuscarCompradorButton As TicketYa.MyButton
+    Friend WithEvents ApellidoTextBox As Comex.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
+    Friend WithEvents CompradoresComboBox As Comex.MyComboBox
+    Friend WithEvents BuscarCompradorButton As Comex.MyButton
     Friend WithEvents CompradorGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents NumeroCompradorTextBox As TicketYa.MyTextBox
+    Friend WithEvents NumeroCompradorTextBox As Comex.MyTextBox
     Friend WithEvents ShowGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents BuscarShowButton As TicketYa.MyButton
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents ShowTextBox As TicketYa.MyTextBox
+    Friend WithEvents BuscarShowButton As Comex.MyButton
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
+    Friend WithEvents ShowTextBox As Comex.MyTextBox
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents SectorComboBox As TicketYa.MyComboBox
+    Friend WithEvents SectorComboBox As Comex.MyComboBox
     Friend WithEvents SectorLabel As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents FechaComboBox As TicketYa.MyComboBox
+    Friend WithEvents FechaComboBox As Comex.MyComboBox
     Friend WithEvents Panel As System.Windows.Forms.Panel
-    Friend WithEvents VentaDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents AceptarButton As TicketYa.MyButton
-    Friend WithEvents CancelarButton As TicketYa.MyButton
+    Friend WithEvents VentaDataGrid As Comex.MyDataGrid
+    Friend WithEvents AceptarButton As Comex.MyButton
+    Friend WithEvents CancelarButton As Comex.MyButton
     Friend WithEvents idSilla As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idSector As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idShow As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -595,14 +595,14 @@ Partial Class GenerarVentaForm
     Friend WithEvents FilaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ColumnaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SubTotalTextBox As TicketYa.MyTextBox
+    Friend WithEvents SubTotalTextBox As Comex.MyTextBox
     Friend WithEvents SubTotalLabel As System.Windows.Forms.Label
     Friend WithEvents DescuentoLabel As System.Windows.Forms.Label
-    Friend WithEvents DescuentoTextBox As TicketYa.MyTextBox
+    Friend WithEvents DescuentoTextBox As Comex.MyTextBox
     Friend WithEvents TotalLabel As System.Windows.Forms.Label
-    Friend WithEvents TotalTextBox As TicketYa.MyTextBox
+    Friend WithEvents TotalTextBox As Comex.MyTextBox
     Friend WithEvents PromocionLabel As System.Windows.Forms.Label
-    Friend WithEvents PromocionComboBox As TicketYa.MyComboBox
+    Friend WithEvents PromocionComboBox As Comex.MyComboBox
     Friend WithEvents EfectivoCheckBox As System.Windows.Forms.CheckBox
 
 End Class

@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarShowForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class GenerarShowForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.SedeLabel = New System.Windows.Forms.Label()
         Me.TipoLabel = New System.Windows.Forms.Label()
-        Me.NombreTextBox = New TicketYa.MyTextBox()
+        Me.NombreTextBox = New Comex.MyTextBox()
         Me.NombreLabel = New System.Windows.Forms.Label()
-        Me.AltaShowButton = New TicketYa.MyButton()
-        Me.TipoShowComboBox = New TicketYa.MyComboBox()
-        Me.SedeComboBox = New TicketYa.MyComboBox()
+        Me.AltaShowButton = New Comex.MyButton()
+        Me.TipoShowComboBox = New Comex.MyComboBox()
+        Me.SedeComboBox = New Comex.MyComboBox()
         Me.SuspendLayout()
         '
         'SedeLabel
@@ -70,7 +70,7 @@ Partial Class GenerarShowForm
         '
         'AltaShowButton
         '
-        Me.AltaShowButton.Image = Global.TicketYa.My.Resources.Resources.aceptar
+        Me.AltaShowButton.Image = Global.Comex.My.Resources.Resources.aceptar
         Me.AltaShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AltaShowButton.Location = New System.Drawing.Point(303, 18)
         Me.AltaShowButton.Name = "AltaShowButton"
@@ -119,12 +119,12 @@ Partial Class GenerarShowForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents AltaShowButton As TicketYa.MyButton
+    Friend WithEvents AltaShowButton As Comex.MyButton
     Friend WithEvents SedeLabel As System.Windows.Forms.Label
     Friend WithEvents TipoLabel As System.Windows.Forms.Label
-    Friend WithEvents NombreTextBox As TicketYa.MyTextBox
+    Friend WithEvents NombreTextBox As Comex.MyTextBox
     Friend WithEvents NombreLabel As System.Windows.Forms.Label
-    Friend WithEvents TipoShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents SedeComboBox As TicketYa.MyComboBox
+    Friend WithEvents TipoShowComboBox As Comex.MyComboBox
+    Friend WithEvents SedeComboBox As Comex.MyComboBox
 
 End Class

@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarShowForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,27 +17,27 @@ Partial Class BuscarShowForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.EliminarShowButton = New TicketYa.MyButton()
-        Me.ModificarShowButton = New TicketYa.MyButton()
-        Me.ShowsDataGrid = New TicketYa.MyDataGrid()
+        Me.EliminarShowButton = New Comex.MyButton()
+        Me.ModificarShowButton = New Comex.MyButton()
+        Me.ShowsDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SedeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TipoShowColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.identSedeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TelefonoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BuscarShowButton = New TicketYa.MyButton()
-        Me.ShowTextBox = New TicketYa.MyTextBox()
+        Me.BuscarShowButton = New Comex.MyButton()
+        Me.ShowTextBox = New Comex.MyTextBox()
         Me.ShowLabel = New System.Windows.Forms.Label()
-        Me.ReportesButton = New TicketYa.MyButton()
+        Me.ReportesButton = New Comex.MyButton()
         CType(Me.ShowsDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'EliminarShowButton
         '
-        Me.EliminarShowButton.Image = Global.TicketYa.My.Resources.Resources.basura
+        Me.EliminarShowButton.Image = Global.Comex.My.Resources.Resources.basura
         Me.EliminarShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EliminarShowButton.Location = New System.Drawing.Point(528, 140)
         Me.EliminarShowButton.Name = "EliminarShowButton"
@@ -49,7 +49,7 @@ Partial Class BuscarShowForm
         '
         'ModificarShowButton
         '
-        Me.ModificarShowButton.Image = Global.TicketYa.My.Resources.Resources.editar
+        Me.ModificarShowButton.Image = Global.Comex.My.Resources.Resources.editar
         Me.ModificarShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarShowButton.Location = New System.Drawing.Point(528, 86)
         Me.ModificarShowButton.Name = "ModificarShowButton"
@@ -124,7 +124,7 @@ Partial Class BuscarShowForm
         '
         'BuscarShowButton
         '
-        Me.BuscarShowButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarShowButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarShowButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarShowButton.Location = New System.Drawing.Point(528, 22)
         Me.BuscarShowButton.Name = "BuscarShowButton"
@@ -158,7 +158,7 @@ Partial Class BuscarShowForm
         '
         'ReportesButton
         '
-        Me.ReportesButton.Image = Global.TicketYa.My.Resources.Resources.Graphics_icon
+        Me.ReportesButton.Image = Global.Comex.My.Resources.Resources.Graphics_icon
         Me.ReportesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ReportesButton.Location = New System.Drawing.Point(528, 203)
         Me.ReportesButton.Name = "ReportesButton"
@@ -186,11 +186,11 @@ Partial Class BuscarShowForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents EliminarShowButton As TicketYa.MyButton
-    Friend WithEvents ModificarShowButton As TicketYa.MyButton
-    Friend WithEvents ShowsDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarShowButton As TicketYa.MyButton
-    Friend WithEvents ShowTextBox As TicketYa.MyTextBox
+    Friend WithEvents EliminarShowButton As Comex.MyButton
+    Friend WithEvents ModificarShowButton As Comex.MyButton
+    Friend WithEvents ShowsDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarShowButton As Comex.MyButton
+    Friend WithEvents ShowTextBox As Comex.MyTextBox
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -198,6 +198,6 @@ Partial Class BuscarShowForm
     Friend WithEvents TipoShowColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents identSedeColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TelefonoColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ReportesButton As TicketYa.MyButton
+    Friend WithEvents ReportesButton As Comex.MyButton
 
 End Class

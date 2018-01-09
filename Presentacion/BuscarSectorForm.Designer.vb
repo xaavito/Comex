@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarSectorForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,28 +17,28 @@ Partial Class BuscarSectorForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ReportesButton = New TicketYa.MyButton()
-        Me.EliminarSectorButton = New TicketYa.MyButton()
-        Me.ModificarSectorButton = New TicketYa.MyButton()
-        Me.SectoresDataGrid = New TicketYa.MyDataGrid()
+        Me.ReportesButton = New Comex.MyButton()
+        Me.EliminarSectorButton = New Comex.MyButton()
+        Me.ModificarSectorButton = New Comex.MyButton()
+        Me.SectoresDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FilasColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnasColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ValorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BuscarSectorButton = New TicketYa.MyButton()
+        Me.BuscarSectorButton = New Comex.MyButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ShowLabel = New System.Windows.Forms.Label()
-        Me.FechaComboBox = New TicketYa.MyComboBox()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
+        Me.FechaComboBox = New Comex.MyComboBox()
+        Me.ShowComboBox = New Comex.MyComboBox()
         CType(Me.SectoresDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ReportesButton
         '
-        Me.ReportesButton.Image = Global.TicketYa.My.Resources.Resources.Graphics_icon
+        Me.ReportesButton.Image = Global.Comex.My.Resources.Resources.Graphics_icon
         Me.ReportesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ReportesButton.Location = New System.Drawing.Point(524, 190)
         Me.ReportesButton.Name = "ReportesButton"
@@ -50,7 +50,7 @@ Partial Class BuscarSectorForm
         '
         'EliminarSectorButton
         '
-        Me.EliminarSectorButton.Image = Global.TicketYa.My.Resources.Resources.basura
+        Me.EliminarSectorButton.Image = Global.Comex.My.Resources.Resources.basura
         Me.EliminarSectorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EliminarSectorButton.Location = New System.Drawing.Point(524, 137)
         Me.EliminarSectorButton.Name = "EliminarSectorButton"
@@ -62,7 +62,7 @@ Partial Class BuscarSectorForm
         '
         'ModificarSectorButton
         '
-        Me.ModificarSectorButton.Image = Global.TicketYa.My.Resources.Resources.editar
+        Me.ModificarSectorButton.Image = Global.Comex.My.Resources.Resources.editar
         Me.ModificarSectorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarSectorButton.Location = New System.Drawing.Point(524, 88)
         Me.ModificarSectorButton.Name = "ModificarSectorButton"
@@ -126,7 +126,7 @@ Partial Class BuscarSectorForm
         '
         'BuscarSectorButton
         '
-        Me.BuscarSectorButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarSectorButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarSectorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarSectorButton.Location = New System.Drawing.Point(524, 24)
         Me.BuscarSectorButton.Name = "BuscarSectorButton"
@@ -196,15 +196,15 @@ Partial Class BuscarSectorForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents EliminarSectorButton As TicketYa.MyButton
-    Friend WithEvents ModificarSectorButton As TicketYa.MyButton
-    Friend WithEvents SectoresDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarSectorButton As TicketYa.MyButton
-    Friend WithEvents ReportesButton As TicketYa.MyButton
+    Friend WithEvents EliminarSectorButton As Comex.MyButton
+    Friend WithEvents ModificarSectorButton As Comex.MyButton
+    Friend WithEvents SectoresDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarSectorButton As Comex.MyButton
+    Friend WithEvents ReportesButton As Comex.MyButton
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
-    Friend WithEvents FechaComboBox As TicketYa.MyComboBox
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
+    Friend WithEvents FechaComboBox As Comex.MyComboBox
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FilasColumn As System.Windows.Forms.DataGridViewTextBoxColumn

@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarCompradorForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class BuscarCompradorForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarCompradorForm))
-        Me.EliminarCompradorButton = New TicketYa.MyButton()
-        Me.ModificarCompradorButton = New TicketYa.MyButton()
+        Me.EliminarCompradorButton = New Comex.MyButton()
+        Me.ModificarCompradorButton = New Comex.MyButton()
         Me.CompradorLabel = New System.Windows.Forms.Label()
-        Me.CompradorTextBox = New TicketYa.MyTextBox()
-        Me.BuscarCompradorButton = New TicketYa.MyButton()
-        Me.CompradoresDataGrid = New TicketYa.MyDataGrid()
+        Me.CompradorTextBox = New Comex.MyTextBox()
+        Me.BuscarCompradorButton = New Comex.MyButton()
+        Me.CompradoresDataGrid = New Comex.MyDataGrid()
         Me.identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ActivoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -177,12 +177,12 @@ Partial Class BuscarCompradorForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents EliminarCompradorButton As TicketYa.MyButton
-    Friend WithEvents ModificarCompradorButton As TicketYa.MyButton
+    Friend WithEvents EliminarCompradorButton As Comex.MyButton
+    Friend WithEvents ModificarCompradorButton As Comex.MyButton
     Friend WithEvents CompradorLabel As System.Windows.Forms.Label
-    Friend WithEvents CompradorTextBox As TicketYa.MyTextBox
-    Friend WithEvents BuscarCompradorButton As TicketYa.MyButton
-    Friend WithEvents CompradoresDataGrid As TicketYa.MyDataGrid
+    Friend WithEvents CompradorTextBox As Comex.MyTextBox
+    Friend WithEvents BuscarCompradorButton As Comex.MyButton
+    Friend WithEvents CompradoresDataGrid As Comex.MyDataGrid
     Friend WithEvents identificador As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ActivoColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreColumn As System.Windows.Forms.DataGridViewTextBoxColumn

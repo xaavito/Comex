@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarPromocionForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,26 +17,26 @@ Partial Class GenerarPromocionForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerarPromocionForm))
         Me.DescripcionLabel = New System.Windows.Forms.Label()
-        Me.DescripcionTextBox = New TicketYa.MyTextBox()
+        Me.DescripcionTextBox = New Comex.MyTextBox()
         Me.DesdeLabel = New System.Windows.Forms.Label()
         Me.HastaLabel = New System.Windows.Forms.Label()
-        Me.DescuentoTextBox = New TicketYa.MyTextBox()
+        Me.DescuentoTextBox = New Comex.MyTextBox()
         Me.DescuentoLabel = New System.Windows.Forms.Label()
-        Me.GenerarPromocionButton = New TicketYa.MyButton()
+        Me.GenerarPromocionButton = New Comex.MyButton()
         Me.SectorLabel = New System.Windows.Forms.Label()
-        Me.SectorComboBox = New TicketYa.MyComboBox()
+        Me.SectorComboBox = New Comex.MyComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ShowLabel = New System.Windows.Forms.Label()
-        Me.FechaComboBox = New TicketYa.MyComboBox()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
-        Me.DesdeTextBox = New TicketYa.MyMaskedTextBox()
-        Me.HastaTextBox = New TicketYa.MyMaskedTextBox()
+        Me.FechaComboBox = New Comex.MyComboBox()
+        Me.ShowComboBox = New Comex.MyComboBox()
+        Me.DesdeTextBox = New Comex.MyMaskedTextBox()
+        Me.HastaTextBox = New Comex.MyMaskedTextBox()
         Me.TipoLabel = New System.Windows.Forms.Label()
-        Me.TipoDescuentoComboBox = New TicketYa.MyComboBox()
+        Me.TipoDescuentoComboBox = New Comex.MyComboBox()
         Me.SuspendLayout()
         '
         'DescripcionLabel
@@ -237,21 +237,21 @@ Partial Class GenerarPromocionForm
 
     End Sub
     Friend WithEvents DescripcionLabel As System.Windows.Forms.Label
-    Friend WithEvents DescripcionTextBox As TicketYa.MyTextBox
+    Friend WithEvents DescripcionTextBox As Comex.MyTextBox
     Friend WithEvents DesdeLabel As System.Windows.Forms.Label
     Friend WithEvents HastaLabel As System.Windows.Forms.Label
-    Friend WithEvents DescuentoTextBox As TicketYa.MyTextBox
+    Friend WithEvents DescuentoTextBox As Comex.MyTextBox
     Friend WithEvents DescuentoLabel As System.Windows.Forms.Label
-    Friend WithEvents GenerarPromocionButton As TicketYa.MyButton
+    Friend WithEvents GenerarPromocionButton As Comex.MyButton
     Friend WithEvents SectorLabel As System.Windows.Forms.Label
-    Friend WithEvents SectorComboBox As TicketYa.MyComboBox
+    Friend WithEvents SectorComboBox As Comex.MyComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
-    Friend WithEvents FechaComboBox As TicketYa.MyComboBox
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
-    Friend WithEvents DesdeTextBox As TicketYa.MyMaskedTextBox
-    Friend WithEvents HastaTextBox As TicketYa.MyMaskedTextBox
+    Friend WithEvents FechaComboBox As Comex.MyComboBox
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
+    Friend WithEvents DesdeTextBox As Comex.MyMaskedTextBox
+    Friend WithEvents HastaTextBox As Comex.MyMaskedTextBox
     Friend WithEvents TipoLabel As System.Windows.Forms.Label
-    Friend WithEvents TipoDescuentoComboBox As TicketYa.MyComboBox
+    Friend WithEvents TipoDescuentoComboBox As Comex.MyComboBox
 
 End Class

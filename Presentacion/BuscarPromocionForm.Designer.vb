@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarPromocionForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,18 +17,18 @@ Partial Class BuscarPromocionForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.EliminarPromocionButton = New TicketYa.MyButton()
-        Me.ModificarPromocionButton = New TicketYa.MyButton()
-        Me.PromocionesDataGrid = New TicketYa.MyDataGrid()
-        Me.BuscarPromocionButton = New TicketYa.MyButton()
-        Me.FechaComboBox = New TicketYa.MyComboBox()
-        Me.ShowComboBox = New TicketYa.MyComboBox()
+        Me.EliminarPromocionButton = New Comex.MyButton()
+        Me.ModificarPromocionButton = New Comex.MyButton()
+        Me.PromocionesDataGrid = New Comex.MyDataGrid()
+        Me.BuscarPromocionButton = New Comex.MyButton()
+        Me.FechaComboBox = New Comex.MyComboBox()
+        Me.ShowComboBox = New Comex.MyComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ShowLabel = New System.Windows.Forms.Label()
         Me.SectorLabel = New System.Windows.Forms.Label()
-        Me.SectorComboBox = New TicketYa.MyComboBox()
+        Me.SectorComboBox = New Comex.MyComboBox()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescuentoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -39,7 +39,7 @@ Partial Class BuscarPromocionForm
         '
         'EliminarPromocionButton
         '
-        Me.EliminarPromocionButton.Image = Global.TicketYa.My.Resources.Resources.basura
+        Me.EliminarPromocionButton.Image = Global.Comex.My.Resources.Resources.basura
         Me.EliminarPromocionButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EliminarPromocionButton.Location = New System.Drawing.Point(692, 155)
         Me.EliminarPromocionButton.Name = "EliminarPromocionButton"
@@ -51,7 +51,7 @@ Partial Class BuscarPromocionForm
         '
         'ModificarPromocionButton
         '
-        Me.ModificarPromocionButton.Image = Global.TicketYa.My.Resources.Resources.editar
+        Me.ModificarPromocionButton.Image = Global.Comex.My.Resources.Resources.editar
         Me.ModificarPromocionButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ModificarPromocionButton.Location = New System.Drawing.Point(692, 79)
         Me.ModificarPromocionButton.Name = "ModificarPromocionButton"
@@ -79,7 +79,7 @@ Partial Class BuscarPromocionForm
         '
         'BuscarPromocionButton
         '
-        Me.BuscarPromocionButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarPromocionButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarPromocionButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarPromocionButton.Location = New System.Drawing.Point(692, 15)
         Me.BuscarPromocionButton.Name = "BuscarPromocionButton"
@@ -206,16 +206,16 @@ Partial Class BuscarPromocionForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents EliminarPromocionButton As TicketYa.MyButton
-    Friend WithEvents ModificarPromocionButton As TicketYa.MyButton
-    Friend WithEvents PromocionesDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarPromocionButton As TicketYa.MyButton
-    Friend WithEvents FechaComboBox As TicketYa.MyComboBox
-    Friend WithEvents ShowComboBox As TicketYa.MyComboBox
+    Friend WithEvents EliminarPromocionButton As Comex.MyButton
+    Friend WithEvents ModificarPromocionButton As Comex.MyButton
+    Friend WithEvents PromocionesDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarPromocionButton As Comex.MyButton
+    Friend WithEvents FechaComboBox As Comex.MyComboBox
+    Friend WithEvents ShowComboBox As Comex.MyComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ShowLabel As System.Windows.Forms.Label
     Friend WithEvents SectorLabel As System.Windows.Forms.Label
-    Friend WithEvents SectorComboBox As TicketYa.MyComboBox
+    Friend WithEvents SectorComboBox As Comex.MyComboBox
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescuentoColumn As System.Windows.Forms.DataGridViewTextBoxColumn

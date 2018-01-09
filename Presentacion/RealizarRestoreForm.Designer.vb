@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class RealizarRestoreForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,11 +17,11 @@ Partial Class RealizarRestoreForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RealizarRestoreForm))
-        Me.RealizarRestoreButton = New TicketYa.MyButton()
-        Me.BackupDataGrid = New TicketYa.MyDataGrid()
+        Me.RealizarRestoreButton = New Comex.MyButton()
+        Me.BackupDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -92,8 +92,8 @@ Partial Class RealizarRestoreForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents RealizarRestoreButton As TicketYa.MyButton
-    Friend WithEvents BackupDataGrid As TicketYa.MyDataGrid
+    Friend WithEvents RealizarRestoreButton As Comex.MyButton
+    Friend WithEvents BackupDataGrid As Comex.MyDataGrid
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaColumn As System.Windows.Forms.DataGridViewTextBoxColumn

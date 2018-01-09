@@ -40,7 +40,7 @@ Public Class LoginForm
         'Dim types As Type() = myAssembly.GetTypes()
         'For Each myType In types
         '    ' mytype
-        '    If myType.BaseType.FullName = "TicketYa.BaseForm" Then
+        '    If myType.BaseType.FullName = "Comex.BaseForm" Then
         '        'Debug.Print("-----" + myType.Name)
         '        Dim form As BaseForm
         '        form = Activator.CreateInstance(myType)

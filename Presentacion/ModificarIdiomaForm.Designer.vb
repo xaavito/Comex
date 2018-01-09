@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ModificarIdiomaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,28 +17,28 @@ Partial Class ModificarIdiomaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarIdiomaForm))
         Me.ExcepcionLabel = New System.Windows.Forms.Label()
         Me.MensajeBitacoraLabel = New System.Windows.Forms.Label()
         Me.ControlesLabel = New System.Windows.Forms.Label()
-        Me.ExcepcionesDataGrid = New TicketYa.MyDataGrid()
+        Me.ExcepcionesDataGrid = New Comex.MyDataGrid()
         Me.CodigoColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MensajeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MensajesDataGrid = New TicketYa.MyDataGrid()
-        Me.ControlesDataGrid = New TicketYa.MyDataGrid()
+        Me.MensajesDataGrid = New Comex.MyDataGrid()
+        Me.ControlesDataGrid = New Comex.MyDataGrid()
         Me.IdiomaLabel = New System.Windows.Forms.Label()
-        Me.IdiomaTextBox = New TicketYa.MyTextBox()
-        Me.GuardarIdiomaButton = New TicketYa.MyButton()
-        Me.CancelarButton = New TicketYa.MyButton()
-        Me.ExcepcionTextBox = New TicketYa.MyTextBox()
-        Me.ControlTextBox = New TicketYa.MyTextBox()
-        Me.BitacoraTextBox = New TicketYa.MyTextBox()
-        Me.AceptarExcepcionButton = New TicketYa.MyButton()
-        Me.AceptarBitacoraButton = New TicketYa.MyButton()
-        Me.AceptarControlesButton = New TicketYa.MyButton()
+        Me.IdiomaTextBox = New Comex.MyTextBox()
+        Me.GuardarIdiomaButton = New Comex.MyButton()
+        Me.CancelarButton = New Comex.MyButton()
+        Me.ExcepcionTextBox = New Comex.MyTextBox()
+        Me.ControlTextBox = New Comex.MyTextBox()
+        Me.BitacoraTextBox = New Comex.MyTextBox()
+        Me.AceptarExcepcionButton = New Comex.MyButton()
+        Me.AceptarBitacoraButton = New Comex.MyButton()
+        Me.AceptarControlesButton = New Comex.MyButton()
         Me.IdBaseColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MensajeColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.identificador = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -365,17 +365,17 @@ Partial Class ModificarIdiomaForm
     Friend WithEvents CodigoColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MensajeColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ExcepcionesDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents MensajesDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents ControlesDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents GuardarIdiomaButton As TicketYa.MyButton
-    Friend WithEvents CancelarButton As TicketYa.MyButton
-    Friend WithEvents ExcepcionTextBox As TicketYa.MyTextBox
-    Friend WithEvents ControlTextBox As TicketYa.MyTextBox
-    Friend WithEvents BitacoraTextBox As TicketYa.MyTextBox
-    Friend WithEvents AceptarExcepcionButton As TicketYa.MyButton
-    Friend WithEvents AceptarBitacoraButton As TicketYa.MyButton
-    Friend WithEvents AceptarControlesButton As TicketYa.MyButton
+    Friend WithEvents ExcepcionesDataGrid As Comex.MyDataGrid
+    Friend WithEvents MensajesDataGrid As Comex.MyDataGrid
+    Friend WithEvents ControlesDataGrid As Comex.MyDataGrid
+    Friend WithEvents GuardarIdiomaButton As Comex.MyButton
+    Friend WithEvents CancelarButton As Comex.MyButton
+    Friend WithEvents ExcepcionTextBox As Comex.MyTextBox
+    Friend WithEvents ControlTextBox As Comex.MyTextBox
+    Friend WithEvents BitacoraTextBox As Comex.MyTextBox
+    Friend WithEvents AceptarExcepcionButton As Comex.MyButton
+    Friend WithEvents AceptarBitacoraButton As Comex.MyButton
+    Friend WithEvents AceptarControlesButton As Comex.MyButton
     Friend WithEvents IdBaseColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MensajeColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents identificador As System.Windows.Forms.DataGridViewTextBoxColumn

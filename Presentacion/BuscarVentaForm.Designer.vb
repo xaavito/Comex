@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class BuscarVentaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,17 +17,17 @@ Partial Class BuscarVentaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.VentasDataGrid = New TicketYa.MyDataGrid()
-        Me.BuscarVentaButton = New TicketYa.MyButton()
+        Me.VentasDataGrid = New Comex.MyDataGrid()
+        Me.BuscarVentaButton = New Comex.MyButton()
         Me.DesdeLabel = New System.Windows.Forms.Label()
         Me.HastaLabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.VendedorComboBox = New TicketYa.MyComboBox()
+        Me.VendedorComboBox = New Comex.MyComboBox()
         Me.FechaGroupBox = New System.Windows.Forms.GroupBox()
-        Me.FechaHastaTextBox = New TicketYa.MyMaskedTextBox()
-        Me.FechaDesdeTextBox = New TicketYa.MyMaskedTextBox()
+        Me.FechaHastaTextBox = New Comex.MyMaskedTextBox()
+        Me.FechaDesdeTextBox = New Comex.MyMaskedTextBox()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -55,7 +55,7 @@ Partial Class BuscarVentaForm
         '
         'BuscarVentaButton
         '
-        Me.BuscarVentaButton.Image = Global.TicketYa.My.Resources.Resources.buscar
+        Me.BuscarVentaButton.Image = Global.Comex.My.Resources.Resources.buscar
         Me.BuscarVentaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BuscarVentaButton.Location = New System.Drawing.Point(830, 23)
         Me.BuscarVentaButton.Name = "BuscarVentaButton"
@@ -186,15 +186,15 @@ Partial Class BuscarVentaForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents VentasDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents BuscarVentaButton As TicketYa.MyButton
+    Friend WithEvents VentasDataGrid As Comex.MyDataGrid
+    Friend WithEvents BuscarVentaButton As Comex.MyButton
     Friend WithEvents DesdeLabel As System.Windows.Forms.Label
     Friend WithEvents HastaLabel As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents VendedorComboBox As TicketYa.MyComboBox
+    Friend WithEvents VendedorComboBox As Comex.MyComboBox
     Friend WithEvents FechaGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents FechaHastaTextBox As TicketYa.MyMaskedTextBox
-    Friend WithEvents FechaDesdeTextBox As TicketYa.MyMaskedTextBox
+    Friend WithEvents FechaHastaTextBox As Comex.MyMaskedTextBox
+    Friend WithEvents FechaDesdeTextBox As Comex.MyMaskedTextBox
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TotalColumn As System.Windows.Forms.DataGridViewTextBoxColumn

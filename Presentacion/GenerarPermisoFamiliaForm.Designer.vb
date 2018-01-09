@@ -1,9 +1,9 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GenerarPermisoFamiliaForm
-    Inherits TicketYa.BaseForm
+    Inherits Comex.BaseForm
 
     'Form invalida a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,22 +17,22 @@ Partial Class GenerarPermisoFamiliaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerarPermisoFamiliaForm))
-        Me.PermisoDataGrid = New TicketYa.MyDataGrid()
+        Me.PermisoDataGrid = New Comex.MyDataGrid()
         Me.DescripcionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IndentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FamiliaDataGrid = New TicketYa.MyDataGrid()
+        Me.FamiliaDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UsuarioColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PermisosFamiliaDataGrid = New TicketYa.MyDataGrid()
+        Me.PermisosFamiliaDataGrid = New Comex.MyDataGrid()
         Me.IdentificadorColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DescripcionColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AgregarPermisoFamiliaButton = New TicketYa.MyButton()
-        Me.QuitarPermisoFamiliaButton = New TicketYa.MyButton()
-        Me.GuardarPermisoFamiliaButton = New TicketYa.MyButton()
-        Me.CancelarButton = New TicketYa.MyButton()
+        Me.AgregarPermisoFamiliaButton = New Comex.MyButton()
+        Me.QuitarPermisoFamiliaButton = New Comex.MyButton()
+        Me.GuardarPermisoFamiliaButton = New Comex.MyButton()
+        Me.CancelarButton = New Comex.MyButton()
         CType(Me.PermisoDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FamiliaDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PermisosFamiliaDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -206,13 +206,13 @@ Partial Class GenerarPermisoFamiliaForm
     Friend WithEvents IndentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents IdentificadorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents UsuarioColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AgregarPermisoFamiliaButton As TicketYa.MyButton
-    Friend WithEvents QuitarPermisoFamiliaButton As TicketYa.MyButton
-    Friend WithEvents GuardarPermisoFamiliaButton As TicketYa.MyButton
-    Friend WithEvents PermisoDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents FamiliaDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents PermisosFamiliaDataGrid As TicketYa.MyDataGrid
-    Friend WithEvents CancelarButton As TicketYa.MyButton
+    Friend WithEvents AgregarPermisoFamiliaButton As Comex.MyButton
+    Friend WithEvents QuitarPermisoFamiliaButton As Comex.MyButton
+    Friend WithEvents GuardarPermisoFamiliaButton As Comex.MyButton
+    Friend WithEvents PermisoDataGrid As Comex.MyDataGrid
+    Friend WithEvents FamiliaDataGrid As Comex.MyDataGrid
+    Friend WithEvents PermisosFamiliaDataGrid As Comex.MyDataGrid
+    Friend WithEvents CancelarButton As Comex.MyButton
     Friend WithEvents IdentificadorColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
 
