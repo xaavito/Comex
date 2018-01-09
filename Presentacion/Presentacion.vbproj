@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14431111-F89A-4864-AB70-FF148025E37D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TicketYa.My.MyApplication</StartupObject>
+    <RootNamespace>TicketYa</RootNamespace>
+    <AssemblyName>TicketYa</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TicketYa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TicketYa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscarBackupForm.Designer.vb">
+      <DependentUpon>BuscarBackupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarBackupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarBitacoraForm.Designer.vb">
+      <DependentUpon>BuscarBitacoraForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarBitacoraForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCompradorForm.Designer.vb">
+      <DependentUpon>BuscarCompradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCompradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarFamiliaForm.Designer.vb">
+      <DependentUpon>BuscarFamiliaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarFamiliaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarFechaForm.Designer.vb">
+      <DependentUpon>BuscarFechaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarFechaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarIdiomaForm.Designer.vb">
+      <DependentUpon>BuscarIdiomaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarIdiomaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPromocionForm.Designer.vb">
+      <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPromocionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarSedeForm.Designer.vb">
+      <DependentUpon>BuscarSedeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSedeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarVentaForm.Designer.vb">
+      <DependentUpon>BuscarVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\MyButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyChairButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyDataGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyMaskedTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyTableLayoutPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MyTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BuscarSectorForm.Designer.vb">
+      <DependentUpon>BuscarSectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarCompradorForm.Designer.vb">
+      <DependentUpon>GenerarCompradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarCompradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarFechaForm.Designer.vb">
+      <DependentUpon>GenerarFechaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarFechaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarPromocionForm.Designer.vb">
+      <DependentUpon>GenerarPromocionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarPromocionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarSedeForm.Designer.vb">
+      <DependentUpon>GenerarSedeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarSedeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarShowForm.Designer.vb">
+      <DependentUpon>GenerarShowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarShowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarShowForm.Designer.vb">
+      <DependentUpon>BuscarShowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarShowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarSectorForm.Designer.vb">
+      <DependentUpon>GenerarSectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarSectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarIdiomaForm.Designer.vb">
+      <DependentUpon>GenerarIdiomaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarIdiomaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarPermisoUsuarioForm.Designer.vb">
+      <DependentUpon>GenerarPermisoUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarPermisoUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarUsuarioForm.Designer.vb">
+      <DependentUpon>BuscarUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarFamiliaForm.Designer.vb">
+      <DependentUpon>GenerarFamiliaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarFamiliaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarPermisoFamiliaForm.Designer.vb">
+      <DependentUpon>GenerarPermisoFamiliaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarPermisoFamiliaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarUsuarioForm.Designer.vb">
+      <DependentUpon>GenerarUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarVentaForm.Designer.vb">
+      <DependentUpon>GenerarVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instalador.Designer.vb">
+      <DependentUpon>Instalador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Instalador.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.vb">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCompradorForm.Designer.vb">
+      <DependentUpon>ModificarCompradorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCompradorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarFamiliaForm.Designer.vb">
+      <DependentUpon>ModificarFamiliaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarFamiliaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarFechaForm.Designer.vb">
+      <DependentUpon>ModificarFechaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarFechaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarIdiomaForm.Designer.vb">
+      <DependentUpon>ModificarIdiomaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarIdiomaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPromocionForm.Designer.vb">
+      <DependentUpon>ModificarPromocionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPromocionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarSectorForm.Designer.vb">
+      <DependentUpon>ModificarSectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarSectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarSedeForm.Designer.vb">
+      <DependentUpon>ModificarSedeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarSedeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarShowForm.Designer.vb">
+      <DependentUpon>ModificarShowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarShowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarioForm.Designer.vb">
+      <DependentUpon>ModificarUsuarioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyApplication.vb" />
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RealizarRestoreForm.Designer.vb">
+      <DependentUpon>RealizarRestoreForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarRestoreForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteFechas.Designer.vb">
+      <DependentUpon>ReporteFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteSectores.Designer.vb">
+      <DependentUpon>ReporteSectores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteSectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteShowForm.Designer.vb">
+      <DependentUpon>ReporteShowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteShowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlConnection\frmSQLConnectionDialog.Designer.vb">
+      <DependentUpon>frmSQLConnectionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqlConnection\frmSQLConnectionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlConnection\frmSQLConnectionDialogNewDB.Designer.vb">
+      <DependentUpon>frmSQLConnectionDialogNewDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SqlConnection\frmSQLConnectionDialogNewDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscarBackupForm.resx">
+      <DependentUpon>BuscarBackupForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarBitacoraForm.resx">
+      <DependentUpon>BuscarBitacoraForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCompradorForm.resx">
+      <DependentUpon>BuscarCompradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarFamiliaForm.resx">
+      <DependentUpon>BuscarFamiliaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarFechaForm.resx">
+      <DependentUpon>BuscarFechaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarIdiomaForm.resx">
+      <DependentUpon>BuscarIdiomaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPromocionForm.resx">
+      <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSectorForm.resx">
+      <DependentUpon>BuscarSectorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSedeForm.resx">
+      <DependentUpon>BuscarSedeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarShowForm.resx">
+      <DependentUpon>BuscarShowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarVentaForm.resx">
+      <DependentUpon>BuscarVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarCompradorForm.resx">
+      <DependentUpon>GenerarCompradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarFechaForm.resx">
+      <DependentUpon>GenerarFechaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarIdiomaForm.resx">
+      <DependentUpon>GenerarIdiomaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarPermisoFamiliaForm.resx">
+      <DependentUpon>GenerarPermisoFamiliaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarPermisoUsuarioForm.resx">
+      <DependentUpon>GenerarPermisoUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarUsuarioForm.resx">
+      <DependentUpon>BuscarUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarFamiliaForm.resx">
+      <DependentUpon>GenerarFamiliaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarPromocionForm.resx">
+      <DependentUpon>GenerarPromocionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarSectorForm.resx">
+      <DependentUpon>GenerarSectorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarSedeForm.resx">
+      <DependentUpon>GenerarSedeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarShowForm.resx">
+      <DependentUpon>GenerarShowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarUsuarioForm.resx">
+      <DependentUpon>GenerarUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarVentaForm.resx">
+      <DependentUpon>GenerarVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCompradorForm.resx">
+      <DependentUpon>ModificarCompradorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarFamiliaForm.resx">
+      <DependentUpon>ModificarFamiliaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarFechaForm.resx">
+      <DependentUpon>ModificarFechaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarIdiomaForm.resx">
+      <DependentUpon>ModificarIdiomaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPromocionForm.resx">
+      <DependentUpon>ModificarPromocionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarSedeForm.resx">
+      <DependentUpon>ModificarSedeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarShowForm.resx">
+      <DependentUpon>ModificarShowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuarioForm.resx">
+      <DependentUpon>ModificarUsuarioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealizarRestoreForm.resx">
+      <DependentUpon>RealizarRestoreForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteShow.rdlc" />
+    <EmbeddedResource Include="ReporteFecha.rdlc" />
+    <EmbeddedResource Include="ReporteFechas.resx">
+      <DependentUpon>ReporteFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteSector.rdlc" />
+    <EmbeddedResource Include="ReporteSectores.resx">
+      <DependentUpon>ReporteSectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteShowForm.resx">
+      <DependentUpon>ReporteShowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlConnection\frmSQLConnectionDialog.resx">
+      <DependentUpon>frmSQLConnectionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlConnection\frmSQLConnectionDialogNewDB.resx">
+      <DependentUpon>frmSQLConnectionDialogNewDB.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\BE.FechaReporte.datasource" />
+    <None Include="My Project\DataSources\BE.SectorReporte.datasource" />
+    <None Include="My Project\DataSources\BE.ShowReporte.datasource" />
+    <None Include="My Project\DataSources\BE.VentaBE.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.vbproj">
+      <Project>{9A53BC47-D894-4BE9-87B4-8BA0809FA41B}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{38F3AABE-4289-404D-B853-FCE763A6604C}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{26F85DFA-BF9E-406A-AA43-32F1022EB662}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.vbproj">
+      <Project>{3933B96F-EB72-489E-9D03-041867B6DEDC}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitarios\Utilitarios.vbproj">
+      <Project>{48B32CBF-E466-4434-A3D1-9B863707D210}</Project>
+      <Name>Utilitarios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171726_ticket.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteCrossBlueBackground.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171020_tick_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171138_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171151_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171251_license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171308_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171334_application-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171451_backup-restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171472_people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350171726_ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172131_data_management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172161_configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172417_lock_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172894_xmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172977_folder-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350173099_Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1350172460_system-config-language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\js.permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1351440699_trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1352550673_business-contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1352550654_coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stadium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar-chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide-Show-icon.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\chair-icon-libre.PNG" />
+    <None Include="Resources\chair-icon-ocupada.PNG" />
+    <None Include="Resources\chair-icon-resevada.PNG" />
+    <None Include="Resources\chair-icon-seleccionada.PNG" />
+    <None Include="Resources\Misc-Graphics-icon.png" />
+    <Content Include="sql\ticketya.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
