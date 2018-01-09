@@ -20,7 +20,7 @@ Public Class frmSQLConnectionDialogNewDB
         If Not String.IsNullOrEmpty(txtBase.Text) Then
             Cursor.Current = Cursors.WaitCursor
             Try
-                Dim slqman As New RepositorioSQLInstalador()
+                Dim slqman As New RepositorioSQLite()
                 slqman.CreateDataBase(txtBase.Text, RootPath + "sql\ticketya.sql", conn)
                 MessageBox.Show(String.Format("La base de datos '{0}' fue creada satisfactoriamente", txtBase.Text))
                 Me.Close()

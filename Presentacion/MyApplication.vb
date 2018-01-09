@@ -8,7 +8,7 @@ Namespace My
         Protected Overrides Function OnStartup(ByVal eventArgs As Microsoft.VisualBasic.ApplicationServices.StartupEventArgs) As Boolean
 
             Dim Splash As New Intro()
-            Splash.Name = "TicketYa"
+            Splash.Name = "COMEX"
             'Splash.ProductVersion
             Splash.Show()
 
@@ -26,35 +26,37 @@ Namespace My
             Dim ret As Boolean = False
 
             If frm.ShowDialog = DialogResult.OK Then
-                Try
-                    BLL.Actual.usuario = BLL.SeguridadBLL.doLogin(frm.UserTextBox.Text, frm.PassTextBox.Text)
-                    ret = True
-                    Try
-                        BLL.BitacoraBLL.setBitacora(BLL.Actual.usuario, frm.UserTextBox.Text, Utilitarios.Enumeradores.Bitacora.LogueoExitoso)
-                    Catch excep As Excepciones.InsertExcepcion
-                        Application.manejarExcepcion(excep)
-                    End Try
-                Catch ex As Excepciones.UsuarioNoEncontradoExcepcion
-                    Try
-                        BLL.BitacoraBLL.setBitacora(Nothing, frm.UserTextBox.Text + "," + frm.PassTextBox.Text, Utilitarios.Enumeradores.Bitacora.LogueoFallido)
-                    Catch excep As Excepciones.InsertExcepcion
-                        Application.manejarExcepcion(excep)
-                    End Try
-                    Application.manejarExcepcion(ex)
-                Catch ex As Excepciones.IdiomaNoEncontradoExcepcion
-                    Application.manejarExcepcion(ex)
-                    ret = True
-                Catch ex As Excepciones.PermisoNoEncontradoExcepcion
-                    Application.manejarExcepcion(ex)
-                    ret = True
-                Catch ex As Excepciones.FamiliaNoEncontradaExcepcion
-                    Application.manejarExcepcion(ex)
-                    ret = True
-                Catch ex As Excepciones.ConexionImposibleExcepcion
-                    Application.manejarExcepcion(ex)
-                Catch ex As Exception
-                    Application.manejarExcepcion(ex)
-                End Try
+                'TODO VOLVER A CONECTIVIDAD PLENA
+                'Try
+                'BLL.Actual.usuario = BLL.SeguridadBLL.doLogin(frm.UserTextBox.Text, frm.PassTextBox.Text)
+                ret = True
+
+                '    Try
+                '        BLL.BitacoraBLL.setBitacora(BLL.Actual.usuario, frm.UserTextBox.Text, Utilitarios.Enumeradores.Bitacora.LogueoExitoso)
+                '    Catch excep As Excepciones.InsertExcepcion
+                '        Application.manejarExcepcion(excep)
+                '    End Try
+                'Catch ex As Excepciones.UsuarioNoEncontradoExcepcion
+                '    Try
+                '        BLL.BitacoraBLL.setBitacora(Nothing, frm.UserTextBox.Text + "," + frm.PassTextBox.Text, Utilitarios.Enumeradores.Bitacora.LogueoFallido)
+                '    Catch excep As Excepciones.InsertExcepcion
+                '        Application.manejarExcepcion(excep)
+                '    End Try
+                '    Application.manejarExcepcion(ex)
+                'Catch ex As Excepciones.IdiomaNoEncontradoExcepcion
+                '    Application.manejarExcepcion(ex)
+                '    ret = True
+                'Catch ex As Excepciones.PermisoNoEncontradoExcepcion
+                '    Application.manejarExcepcion(ex)
+                '    ret = True
+                'Catch ex As Excepciones.FamiliaNoEncontradaExcepcion
+                '    Application.manejarExcepcion(ex)
+                '    ret = True
+                'Catch ex As Excepciones.ConexionImposibleExcepcion
+                '    Application.manejarExcepcion(ex)
+                'Catch ex As Exception
+                '    Application.manejarExcepcion(ex)
+                'End Try
             Else
                 Environment.Exit(1)
             End If
