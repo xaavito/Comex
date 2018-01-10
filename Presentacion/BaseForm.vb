@@ -107,11 +107,12 @@ Public Class BaseForm
         If Me.DesignMode Then Exit Sub
         Dim login As LoginForm
         If Not Me.Name.Equals("LoginForm") Then
-            eliminarPermisos()
+            'TODO QUITO FUNCIONALIDAD DE PERMISOS E IDIOMA, TODOS HACEN TODO ES SOLO PARA MOSTRAR
+            'eliminarPermisos()
             '' SI REVIENTA LA APLICACION COMENTAR TODO ESTO Y LIMPIAR Y LUEGO RE COMPILAR.
-            getPermisos(BLL.Actual.usuario.getPermisos)
+            'getPermisos(BLL.Actual.usuario.getPermisos)
             '' HASTA ACA
-            setIdioma()
+            'setIdioma()
             'Me.WindowState = FormWindowState.Maximized
         Else
             login = DirectCast(Me, LoginForm)

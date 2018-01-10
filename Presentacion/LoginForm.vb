@@ -83,6 +83,9 @@ Public Class LoginForm
         '        'Next
         '    End If
         'Next
+        'TODO VOLVER A PONER IDIOMA QUIZAS? EL PROYECTO EN ESTE CASO NO LO AMERITA PERO BUENO
+        Me.IdiomaComboBox.Visible = False
+        Me.CambiarIdiomaLabel.Visible = False
     End Sub
 
     Private Sub AceptarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AceptarButton.Click

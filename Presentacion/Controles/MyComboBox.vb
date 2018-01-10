@@ -34,4 +34,14 @@
         Me.SelectedIndex = 0
     End Sub
 
+    Private Sub InitializeComponent()
+        Me.SuspendLayout()
+        '
+        'MyComboBox
+        '
+        Me.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.ResumeLayout(False)
+
+    End Sub
 End Class

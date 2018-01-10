@@ -19,7 +19,13 @@ Partial Class BuscarVentaForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.VentasDataGrid = New Comex.MyDataGrid()
+        Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VendedorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CompradorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BuscarVentaButton = New Comex.MyButton()
         Me.DesdeLabel = New System.Windows.Forms.Label()
         Me.HastaLabel = New System.Windows.Forms.Label()
@@ -28,11 +34,7 @@ Partial Class BuscarVentaForm
         Me.FechaGroupBox = New System.Windows.Forms.GroupBox()
         Me.FechaHastaTextBox = New Comex.MyMaskedTextBox()
         Me.FechaDesdeTextBox = New Comex.MyMaskedTextBox()
-        Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VendedorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CompradorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.VentasDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FechaGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -52,6 +54,42 @@ Partial Class BuscarVentaForm
         Me.VentasDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.VentasDataGrid.Size = New System.Drawing.Size(901, 254)
         Me.VentasDataGrid.TabIndex = 10
+        '
+        'IdentificadorColumn
+        '
+        Me.IdentificadorColumn.DataPropertyName = "identificador"
+        Me.IdentificadorColumn.HeaderText = "Identificador"
+        Me.IdentificadorColumn.Name = "IdentificadorColumn"
+        Me.IdentificadorColumn.ReadOnly = True
+        Me.IdentificadorColumn.Visible = False
+        '
+        'FechaColumn
+        '
+        Me.FechaColumn.DataPropertyName = "fecha"
+        Me.FechaColumn.HeaderText = "Fecha"
+        Me.FechaColumn.Name = "FechaColumn"
+        Me.FechaColumn.ReadOnly = True
+        '
+        'TotalColumn
+        '
+        Me.TotalColumn.DataPropertyName = "total"
+        Me.TotalColumn.HeaderText = "Total"
+        Me.TotalColumn.Name = "TotalColumn"
+        Me.TotalColumn.ReadOnly = True
+        '
+        'VendedorColumn
+        '
+        Me.VendedorColumn.DataPropertyName = "vendedorNombre"
+        Me.VendedorColumn.HeaderText = "Vendedor"
+        Me.VendedorColumn.Name = "VendedorColumn"
+        Me.VendedorColumn.ReadOnly = True
+        '
+        'CompradorColumn
+        '
+        Me.CompradorColumn.DataPropertyName = "compradorNombre"
+        Me.CompradorColumn.HeaderText = "Comprador"
+        Me.CompradorColumn.Name = "CompradorColumn"
+        Me.CompradorColumn.ReadOnly = True
         '
         'BuscarVentaButton
         '
@@ -94,6 +132,8 @@ Partial Class BuscarVentaForm
         '
         'VendedorComboBox
         '
+        Me.VendedorComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.VendedorComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.VendedorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.VendedorComboBox.emptyItem = Nothing
         Me.VendedorComboBox.FormattingEnabled = True
@@ -132,42 +172,6 @@ Partial Class BuscarVentaForm
         Me.FechaDesdeTextBox.Size = New System.Drawing.Size(66, 20)
         Me.FechaDesdeTextBox.TabIndex = 14
         '
-        'IdentificadorColumn
-        '
-        Me.IdentificadorColumn.DataPropertyName = "identificador"
-        Me.IdentificadorColumn.HeaderText = "Identificador"
-        Me.IdentificadorColumn.Name = "IdentificadorColumn"
-        Me.IdentificadorColumn.ReadOnly = True
-        Me.IdentificadorColumn.Visible = False
-        '
-        'FechaColumn
-        '
-        Me.FechaColumn.DataPropertyName = "fecha"
-        Me.FechaColumn.HeaderText = "Fecha"
-        Me.FechaColumn.Name = "FechaColumn"
-        Me.FechaColumn.ReadOnly = True
-        '
-        'TotalColumn
-        '
-        Me.TotalColumn.DataPropertyName = "total"
-        Me.TotalColumn.HeaderText = "Total"
-        Me.TotalColumn.Name = "TotalColumn"
-        Me.TotalColumn.ReadOnly = True
-        '
-        'VendedorColumn
-        '
-        Me.VendedorColumn.DataPropertyName = "vendedorNombre"
-        Me.VendedorColumn.HeaderText = "Vendedor"
-        Me.VendedorColumn.Name = "VendedorColumn"
-        Me.VendedorColumn.ReadOnly = True
-        '
-        'CompradorColumn
-        '
-        Me.CompradorColumn.DataPropertyName = "compradorNombre"
-        Me.CompradorColumn.HeaderText = "Comprador"
-        Me.CompradorColumn.Name = "CompradorColumn"
-        Me.CompradorColumn.ReadOnly = True
-        '
         'BuscarVentaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -200,5 +204,5 @@ Partial Class BuscarVentaForm
     Friend WithEvents TotalColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents VendedorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CompradorColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

@@ -438,6 +438,9 @@
     <EmbeddedResource Include="BuscarVentaForm.resx">
       <DependentUpon>BuscarVentaForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controles\MyComboBox.resx">
+      <DependentUpon>MyComboBox.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GenerarCompradorForm.resx">
       <DependentUpon>GenerarCompradorForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -707,6 +710,9 @@
     <None Include="Resources\chair-icon-resevada.PNG" />
     <None Include="Resources\chair-icon-seleccionada.PNG" />
     <None Include="Resources\Misc-Graphics-icon.png" />
+    <Content Include="Resources\if_shipping_59098.ico" />
+    <Content Include="Resources\if_shipping_59098.png" />
+    <Content Include="Resources\if_shipping_59098x32.png" />
     <Content Include="sql\ticketya.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
