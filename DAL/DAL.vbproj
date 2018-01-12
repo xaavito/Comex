@@ -129,9 +129,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BD\BU20121128.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BE\BE.vbproj">
       <Project>{9A53BC47-D894-4BE9-87B4-8BA0809FA41B}</Project>
       <Name>BE</Name>
