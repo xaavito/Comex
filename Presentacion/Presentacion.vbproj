@@ -138,6 +138,12 @@
     <Compile Include="BuscarIdiomaForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BuscarOperaciones.Designer.vb">
+      <DependentUpon>BuscarOperaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarOperaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarPromocionForm.Designer.vb">
       <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
     </Compile>
@@ -315,6 +321,12 @@
     <Compile Include="ModificarIdiomaForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarOperacion.Designer.vb">
+      <DependentUpon>ModificarOperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarOperacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarPromocionForm.Designer.vb">
       <DependentUpon>ModificarPromocionForm.vb</DependentUpon>
     </Compile>
@@ -423,6 +435,9 @@
     <EmbeddedResource Include="BuscarIdiomaForm.resx">
       <DependentUpon>BuscarIdiomaForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarOperaciones.resx">
+      <DependentUpon>BuscarOperaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarPromocionForm.resx">
       <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -500,6 +515,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarIdiomaForm.resx">
       <DependentUpon>ModificarIdiomaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarOperacion.resx">
+      <DependentUpon>ModificarOperacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarPromocionForm.resx">
       <DependentUpon>ModificarPromocionForm.vb</DependentUpon>

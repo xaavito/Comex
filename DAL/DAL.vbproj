@@ -105,6 +105,7 @@
     <Compile Include="ShowDAL.vb" />
     <Compile Include="SillaDAL.vb" />
     <Compile Include="UsuarioDAL.vb" />
+    <Compile Include="OperacionesDAL.vb" />
     <Compile Include="VentaDAL.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +117,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BD\comex.db" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

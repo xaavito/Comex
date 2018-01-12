@@ -108,6 +108,7 @@
     <Compile Include="SedeBE.vb" />
     <Compile Include="ShowBE.vb" />
     <Compile Include="ShowReporte.vb" />
+    <Compile Include="OperacionBE.vb" />
     <Compile Include="SillaBE.vb" />
     <Compile Include="TipoDescuentoBE.vb" />
     <Compile Include="TipoSectorBE.vb" />
