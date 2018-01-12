@@ -35,15 +35,6 @@
     End Sub
 
     Private Sub EliminarOperacionButton_Click(sender As Object, e As EventArgs) Handles EliminarOperacionButton.Click
-        'If Not OperacionesDataGrid.CurrentRow.DataBoundItem Is Nothing Then
-        '    Dim fam As BE.OperacionBE = DirectCast(OperacionesDataGrid.CurrentRow.DataBoundItem, BE.OperacionBE)
-        '    Dim form As ModificarFamiliaForm
 
-        '    If (Not fam Is Nothing) Then
-        '        form = New ModificarOperacionForm
-        '        form.addFamilia(fam)
-        '        form.ShowDialog()
-        '    End If
-        'End If
     End Sub
 End Class
