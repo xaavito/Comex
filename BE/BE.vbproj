@@ -71,22 +71,11 @@
     <Compile Include="BackupBE.vb" />
     <Compile Include="BitacoraBE.vb" />
     <Compile Include="ControlBE.vb" />
-    <Compile Include="DetalleVentaBE.vb" />
-    <Compile Include="EstadoSillaBE.vb" />
-    <Compile Include="FechaReporte.vb" />
-    <Compile Include="InforReservacion.vb" />
-    <Compile Include="PreferenciaBE.vb" />
-    <Compile Include="PromocionBE.vb" />
-    <Compile Include="SectorBE.vb" />
     <Compile Include="ExcepcionBE.vb" />
     <Compile Include="FamiliaBE.vb" />
-    <Compile Include="FechaBE.vb" />
     <Compile Include="FormularioBE.vb" />
     <Compile Include="IClonable.vb" />
-    <Compile Include="IdiomaBE.vb" />
     <Compile Include="MensajeBE.vb" />
-    <Compile Include="MensajeBitacoraBE.vb" />
-    <Compile Include="MensajeControlBE.vb" />
     <Compile Include="PermisoBE.vb" />
     <Compile Include="PersistibleBE.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -104,17 +93,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SectorReporte.vb" />
-    <Compile Include="SedeBE.vb" />
-    <Compile Include="ShowBE.vb" />
-    <Compile Include="ShowReporte.vb" />
     <Compile Include="OperacionBE.vb" />
-    <Compile Include="SillaBE.vb" />
-    <Compile Include="TipoDescuentoBE.vb" />
-    <Compile Include="TipoSectorBE.vb" />
-    <Compile Include="TipoShowBE.vb" />
     <Compile Include="UsuarioBE.vb" />
-    <Compile Include="VentaBE.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

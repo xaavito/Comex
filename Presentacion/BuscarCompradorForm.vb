@@ -4,20 +4,6 @@
         buscarComprador(CompradorTextBox.Text)
     End Sub
 
-    Private Sub ModificarCompradorButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarCompradorButton.Click
-        If CompradoresDataGrid.hasSelectedObject = True Then
-            Dim pepe As String = CompradoresDataGrid.SelectedRows.Item(0).Cells.Item(0).Value
-            Dim usr As BE.UsuarioBE = DirectCast(CompradoresDataGrid.myObject, BE.UsuarioBE)
-            Dim form As ModificarCompradorForm
-
-            If (Not usr Is Nothing) Then
-                form = New ModificarCompradorForm
-                form.addComprador(usr)
-                form.Show()
-            End If
-        End If
-    End Sub
-
     Private Sub EliminarCompradorButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EliminarCompradorButton.Click
         Dim usr As BE.UsuarioBE
         If CompradoresDataGrid.hasSelectedObject = True Then

@@ -46,61 +46,61 @@ Public Class BaseForm
     End Sub
 
     Public Sub setIdioma()
-        If (Me.HasChildren) Then
-            For Each mens As BE.MensajeControlBE In BLL.Actual.idioma.mensaje
-                For Each ctrl As Control In Me.Controls
-                    'MenuStrip
-                    If TypeOf ctrl Is MenuStrip Then
-                        Dim menu As MenuStrip
-                        menu = DirectCast(ctrl, MenuStrip)
-                        For Each cabeceraMenu As ToolStripMenuItem In menu.Items
-                            For Each itemMenu As ToolStripMenuItem In cabeceraMenu.DropDownItems
-                                If itemMenu.Name.Equals(mens.control) Then
-                                    itemMenu.Text = mens.mensaje
-                                End If
-                                For Each subItemMenu As ToolStripMenuItem In itemMenu.DropDownItems
-                                    If subItemMenu.Name.Equals(mens.control) Then
-                                        subItemMenu.Text = mens.mensaje
-                                    End If
-                                Next
-                            Next
-                            If cabeceraMenu.Name.Equals(mens.control) Then
-                                cabeceraMenu.Text = mens.mensaje
-                            End If
-                        Next cabeceraMenu
-                    End If
-                    If (TypeOf ctrl Is Label Or
-                        TypeOf ctrl Is Button) And
-                        ctrl.Name.Equals(mens.control) Then
-                        ctrl.Text = mens.mensaje
-                    End If
-                    If TypeOf ctrl Is GroupBox Then
-                        For Each c As Control In ctrl.Controls
-                            If c.Name.Equals(mens.control) Then
-                                c.Text = mens.mensaje
-                            End If
-                        Next
-                    End If
-                    If (TypeOf ctrl Is DataGridView) Then
-                        Dim dataGrid As DataGridView
-                        dataGrid = DirectCast(ctrl, DataGridView)
-                        For Each col As DataGridViewColumn In dataGrid.Columns
-                            'Debug.Print(col.Name)
-                            If col.Name.Equals(mens.control) Then
-                                col.HeaderText = mens.mensaje
-                            End If
-                        Next
-                    End If
-                Next ctrl
-                If (TypeOf Me Is Form) Then
-                    Dim form As Form
-                    form = DirectCast(Me, Form)
-                    If form.Name.Equals(mens.control) Then
-                        form.Text = mens.mensaje
-                    End If
-                End If
-            Next mens
-        End If
+        'If (Me.HasChildren) Then
+        '    For Each mens As BE.MensajeControlBE In BLL.Actual.idioma.mensaje
+        '        For Each ctrl As Control In Me.Controls
+        '            'MenuStrip
+        '            If TypeOf ctrl Is MenuStrip Then
+        '                Dim menu As MenuStrip
+        '                menu = DirectCast(ctrl, MenuStrip)
+        '                For Each cabeceraMenu As ToolStripMenuItem In menu.Items
+        '                    For Each itemMenu As ToolStripMenuItem In cabeceraMenu.DropDownItems
+        '                        If itemMenu.Name.Equals(mens.control) Then
+        '                            itemMenu.Text = mens.mensaje
+        '                        End If
+        '                        For Each subItemMenu As ToolStripMenuItem In itemMenu.DropDownItems
+        '                            If subItemMenu.Name.Equals(mens.control) Then
+        '                                subItemMenu.Text = mens.mensaje
+        '                            End If
+        '                        Next
+        '                    Next
+        '                    If cabeceraMenu.Name.Equals(mens.control) Then
+        '                        cabeceraMenu.Text = mens.mensaje
+        '                    End If
+        '                Next cabeceraMenu
+        '            End If
+        '            If (TypeOf ctrl Is Label Or
+        '                TypeOf ctrl Is Button) And
+        '                ctrl.Name.Equals(mens.control) Then
+        '                ctrl.Text = mens.mensaje
+        '            End If
+        '            If TypeOf ctrl Is GroupBox Then
+        '                For Each c As Control In ctrl.Controls
+        '                    If c.Name.Equals(mens.control) Then
+        '                        c.Text = mens.mensaje
+        '                    End If
+        '                Next
+        '            End If
+        '            If (TypeOf ctrl Is DataGridView) Then
+        '                Dim dataGrid As DataGridView
+        '                dataGrid = DirectCast(ctrl, DataGridView)
+        '                For Each col As DataGridViewColumn In dataGrid.Columns
+        '                    'Debug.Print(col.Name)
+        '                    If col.Name.Equals(mens.control) Then
+        '                        col.HeaderText = mens.mensaje
+        '                    End If
+        '                Next
+        '            End If
+        '        Next ctrl
+        '        If (TypeOf Me Is Form) Then
+        '            Dim form As Form
+        '            form = DirectCast(Me, Form)
+        '            If form.Name.Equals(mens.control) Then
+        '                form.Text = mens.mensaje
+        '            End If
+        '        End If
+        '    Next mens
+        'End If
     End Sub
 
     Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

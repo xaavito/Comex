@@ -39,7 +39,7 @@ Partial Class ReporteShowForm
         '
         'ShowReporteBindingSource
         '
-        Me.ShowReporteBindingSource.DataSource = GetType(BE.ShowReporte)
+        'Me.ShowReporteBindingSource.DataSource = GetType(BE.ShowReporte)
         '
         'ReporteShowForm
         '

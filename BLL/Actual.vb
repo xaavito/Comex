@@ -10,17 +10,4 @@
             _usuario = value
         End Set
     End Property
-
-
-    Private Shared _idioma As BE.IdiomaBE
-    Public Shared Property idioma() As BE.IdiomaBE
-        Get
-            Return _idioma
-        End Get
-        Set(ByVal value As BE.IdiomaBE)
-            _idioma = value
-        End Set
-    End Property
-
-
 End Class

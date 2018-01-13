@@ -113,19 +113,6 @@
         End Set
     End Property
 
-
-    Private _idioma As IdiomaBE
-
-    Public Property idioma() As IdiomaBE
-        Get
-            Return _idioma
-        End Get
-        Set(ByVal value As IdiomaBE)
-            _idioma = value
-        End Set
-    End Property
-
-
     Private _familias As List(Of FamiliaBE)
     Public Property familias() As List(Of FamiliaBE)
         Get

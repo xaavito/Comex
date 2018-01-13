@@ -6,20 +6,19 @@
                                      ByVal nom As String,
                                      ByVal ape As String,
                                      ByVal act As Integer,
-                                     ByVal idiomaBE As BE.IdiomaBE,
                                      ByVal list As List(Of BE.FamiliaBE)) As Integer
-        Return DAL.UsuarioDAL.modificarUsuario(id, usr, Utilitarios.Encrypter.EncryptPasswordMD5(pass), nom, ape, act, idiomaBE.identificador, list)
+        Return DAL.UsuarioDAL.modificarUsuario(id, usr, Utilitarios.Encrypter.EncryptPasswordMD5(pass), nom, ape, act, list)
     End Function
 
     Public Shared Function buscarUsuario(ByVal usr As String, ByVal pass As String) As BE.UsuarioBE
         Dim usuario As BE.UsuarioBE
         usuario = DAL.UsuarioDAL.buscarUsuario(usr, pass)
 
-        Dim idioma As BE.IdiomaBE
-        idioma = BLL.GestorIdiomaBLL.buscarIdioma(usuario.idioma.identificador)
+        'Dim idioma As BE.IdiomaBE
+        'idioma = BLL.GestorIdiomaBLL.buscarIdioma(usuario.idioma.identificador)
         'idioma = DAL.IdiomaDAL.buscarIdioma(usuario.idioma.identificador)
 
-        usuario.idioma = idioma
+        'usuario.idioma = idioma
 
         Dim listaPermisos As List(Of BE.PermisoBE)
         ' deberia estar todo encpasulado??? mmmmmm yo creo que si
@@ -75,8 +74,8 @@
         Return DAL.UsuarioDAL.listarUsuarios()
     End Function
 
-    Shared Function altaUsuario(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal idiomaBE As BE.IdiomaBE, ByVal list As List(Of BE.FamiliaBE))
-        Return DAL.UsuarioDAL.altaUsuario(p1, Utilitarios.Encrypter.EncryptPasswordMD5(p2), p3, p4, idiomaBE, list)
+    Shared Function altaUsuario(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal list As List(Of BE.FamiliaBE))
+        Return Nothing
     End Function
 
     Shared Function eliminarComprador(ByVal usr As BE.UsuarioBE) As Integer
@@ -95,9 +94,8 @@
                                   ByVal p6 As String,
                                   ByVal p7 As String,
                                   ByVal p8 As Integer,
-                                  ByVal p9 As String,
-                                  ByVal p10 As List(Of BE.TipoShowBE)) As Integer
-        Return DAL.UsuarioDAL.altaComprador(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)
+                                  ByVal p9 As String) As Integer
+        Return DAL.UsuarioDAL.altaComprador(p1, p2, p3, p4, p5, p6, p7, p8, p9)
     End Function
 
     Shared Function modificarComprador(ByVal p0 As Integer,
@@ -109,9 +107,8 @@
                                   ByVal p6 As String,
                                   ByVal p7 As String,
                                   ByVal p8 As Integer,
-                                  ByVal p9 As String,
-                                  ByVal p10 As List(Of BE.TipoShowBE))
-        Return DAL.UsuarioDAL.modificarComprador(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)
+                                  ByVal p9 As String)
+        Return DAL.UsuarioDAL.modificarComprador(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)
     End Function
 
     Shared Function buscarCompradorCombo(ByVal p1 As String) As Object

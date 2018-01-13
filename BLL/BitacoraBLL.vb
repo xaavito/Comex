@@ -19,13 +19,9 @@
 
         Return DAL.BitacoraDAL.buscarBitacora(usr,
                                               codigo,
-                                              fecha,
-                                              Actual.idioma)
+                                              fecha
+                                            )
 
-    End Function
-
-    Shared Function getBitacorasBase(ByVal idiomaId As Integer) As List(Of BE.MensajeBitacoraBE)
-        Return DAL.BitacoraDAL.buscarBitacorasBase(idiomaId)
     End Function
 
 End Class

@@ -18,12 +18,6 @@ Public Class Principal
         form.Show()
     End Sub
 
-    Private Sub GenerarUsusariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GenerarUsuarios.Click
-        Dim form As New GenerarUsuarioForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
     Private Sub BuscarFamiliasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarFamilias.Click
         Dim form As New BuscarFamiliaForm
         form.MdiParent = Me
@@ -48,18 +42,6 @@ Public Class Principal
         form.Show()
     End Sub
 
-    Private Sub BuscarIdiomaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarIdiomas.Click
-        Dim form As New BuscarIdiomaForm
-        form.MdiParent = Me
-        form.show()
-    End Sub
-
-    Private Sub GenerarIdiomaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GenerarIdiomas.Click
-        Dim form As New GenerarIdiomaForm
-        form.MdiParent = Me
-        form.show()
-    End Sub
-
     Private Sub BuscarBackupToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarBackups.Click
         Dim form As New BuscarBackupForm
         form.MdiParent = Me
@@ -78,24 +60,6 @@ Public Class Principal
         form.Show()
     End Sub
 
-    Private Sub MiUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MiUsuario.Click
-        Dim form = New ModificarUsuarioForm
-        form.addUsuario(BLL.Actual.usuario)
-        Form.Show()
-    End Sub
-
-    Private Sub BuscarSedeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New BuscarSedeForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub GenerarSedeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarSedeForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
     Private Sub BuscarVentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarVenta.Click
         Dim form As New BuscarVentaForm
         form.MdiParent = Me
@@ -108,62 +72,10 @@ Public Class Principal
         form.Show()
     End Sub
 
-    Private Sub BuscarShowToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New BuscarShowForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
 
-    Private Sub GenerarShowToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarShowForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub BuscarSectorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New BuscarSectorForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub GenerarSectorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarSectorForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub BuscarPromocionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New BuscarPromocionForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub GenerarPromocionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarPromocionForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
 
     Private Sub BuscarCompradorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim form As New BuscarCompradorForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub GenerarCompradorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarCompradorForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub BuscarFechaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New BuscarFechaForm
-        form.MdiParent = Me
-        form.Show()
-    End Sub
-
-    Private Sub GenerarFechaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim form As New GenerarFechaForm
         form.MdiParent = Me
         form.Show()
     End Sub

@@ -71,19 +71,11 @@
     <Compile Include="GestorBackupBLL.vb" />
     <Compile Include="GestorBitacoraBLL.vb" />
     <Compile Include="GestorFamiliaBLL.vb" />
-    <Compile Include="GestorFechaBLL.vb" />
     <Compile Include="GestorFormularioBLL.vb" />
-    <Compile Include="GestorIdiomaBLL.vb" />
     <Compile Include="GestorPermisoBLL.vb" />
-    <Compile Include="GestorPreferenciaBLL.vb" />
-    <Compile Include="GestorPromocionBLL.vb" />
     <Compile Include="GestorReportesBLL.vb" />
-    <Compile Include="GestorSectorBLL.vb" />
-    <Compile Include="GestorShowBLL.vb" />
-    <Compile Include="GestorSillaBLL.vb" />
     <Compile Include="GestorUsuarioBLL.vb" />
     <Compile Include="GestorOperacionesBLL.vb" />
-    <Compile Include="GestorVentasBLL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,7 +91,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="GestorSedeBLL.vb" />
     <Compile Include="SeguridadBLL.vb" />
   </ItemGroup>
   <ItemGroup>

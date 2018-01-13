@@ -73,11 +73,8 @@
     <Compile Include="BitacoraDAL.vb" />
     <Compile Include="ExcepcionDAL.vb" />
     <Compile Include="FamiliaDAL.vb" />
-    <Compile Include="IdiomaDAL.vb" />
     <Compile Include="IRepositorio.vb" />
     <Compile Include="IRepositorioDecorator.vb" />
-    <Compile Include="MensajeControlDAL.vb" />
-    <Compile Include="MensajeDAL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -94,19 +91,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="PermisoDAL.vb" />
-    <Compile Include="PreferenciaDAL.vb" />
     <Compile Include="RepositorioFactory.vb" />
     <Compile Include="RepositorioSQL.vb" />
     <Compile Include="RepositorioSQLite.vb" />
     <Compile Include="RepositorioSQLInstalador.vb" />
     <Compile Include="RepositorioTransaccional.vb" />
-    <Compile Include="SectorDAL.vb" />
-    <Compile Include="SedeDAL.vb" />
-    <Compile Include="ShowDAL.vb" />
-    <Compile Include="SillaDAL.vb" />
     <Compile Include="UsuarioDAL.vb" />
     <Compile Include="OperacionesDAL.vb" />
-    <Compile Include="VentaDAL.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

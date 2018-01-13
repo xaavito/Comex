@@ -28,7 +28,7 @@ Partial Class ReporteFechas
         '
         'FechaReporteBindingSource
         '
-        Me.FechaReporteBindingSource.DataSource = GetType(BE.FechaReporte)
+        'Me.FechaReporteBindingSource.DataSource = GetType(BE.FechaReporte)
         '
         'ReportViewer1
         '

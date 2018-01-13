@@ -29,8 +29,7 @@ Public Class BitacoraDAL
 
     Public Shared Function buscarBitacora(ByVal usr As BE.UsuarioBE,
                                           ByVal codigo As Integer,
-                                          ByVal fecha As DateTime,
-                                          ByVal idioma As BE.IdiomaBE) As List(Of BE.BitacoraBE)
+                                          ByVal fecha As DateTime) As List(Of BE.BitacoraBE)
 
         Dim table As DataTable
 
@@ -40,7 +39,6 @@ Public Class BitacoraDAL
             repository.crearComando("BUSCAR_BITACORAS_SP")
             table = New DataTable
             repository.addParam("@idUsuario", usr.identificador)
-            repository.addParam("@idIdioma", idioma.identificador)
             repository.addParam("@codigo", codigo)
             repository.addParam("@fecha", fecha)
             table = repository.executeSearchWithAdapter()
@@ -104,34 +102,7 @@ Public Class BitacoraDAL
         Return bitacoras
     End Function
 
-    Shared Function buscarBitacorasBase(ByVal idIdioma As Integer) As List(Of BE.MensajeBitacoraBE)
-        Dim table As DataTable
 
-        Dim repository As IRepositorio = RepositorioFactory.Create()
-        Dim bitacoras As New List(Of BE.MensajeBitacoraBE)
-        Try
-            repository.crearComando("BUSCAR_BITACORAS_BASE_SP")
-            repository.addParam("@idIdioma", idIdioma)
-
-            table = New DataTable
-
-            table = repository.executeSearchWithAdapter()
-            If (table.Rows.Count <= 0) Then
-                Throw New Excepciones.BitacoraNoEncontradaExcepcion
-            End If
-            For Each pepe As DataRow In table.Rows
-                Dim bitacora As New BE.MensajeBitacoraBE
-                bitacora.idBase = pepe.Item(0)
-                bitacora.mensaje = pepe.Item(1)
-                bitacoras.Add(bitacora)
-            Next
-
-        Catch ex As Exception
-            Throw New Excepciones.BitacoraNoEncontradaExcepcion
-        End Try
-
-        Return bitacoras
-    End Function
 
     Shared Function listarBitacoras(ByVal idioma As Integer) As List(Of BE.BitacoraBE)
         Dim table As DataTable
@@ -159,70 +130,6 @@ Public Class BitacoraDAL
         End Try
 
         Return bitacoras
-    End Function
-
-    Shared Function guardarBitacora(ByVal bit As BE.MensajeBitacoraBE, ByVal newIdiomaId As Integer) As Integer
-        Dim result As Integer
-
-        Dim repository As IRepositorio = RepositorioFactory.Create()
-        Dim tranRepo As New RepositorioTransaccional(repository)
-
-        Dim bitacoras As New List(Of BE.BitacoraBE)
-        Try
-            tranRepo.crearComando("GUARDAR_BITACORAS_BASE_SP")
-            tranRepo.addParam("@idIdioma", newIdiomaId)
-            tranRepo.addParam("@bitBase", bit.idBase)
-            tranRepo.addParam("@bitMensaje", bit.mensaje)
-            result = tranRepo.executeSearchWithStatus()
-            If (result <= 0) Then
-                Throw New Excepciones.ModificacionDeBitacoraExcepcion
-            End If
-
-        Catch ex As Exception
-            Throw New Excepciones.InsertExcepcion
-        End Try
-
-        Return result
-
-    End Function
-
-    Shared Function eliminarBitacora(ByVal bit As BE.MensajeBitacoraBE, ByVal p2 As Integer) As Integer
-        Dim result As Integer
-
-        Dim repository As IRepositorio = RepositorioFactory.Create()
-        Try
-            repository.crearComando("ELIMINAR_BITACORA_SP")
-            repository.addParam("@idIdioma", p2)
-            repository.addParam("@idBitBase", bit.idBase)
-            result = repository.executeSearchWithStatus
-            If (result <= 0) Then
-                Throw New Excepciones.EliminarBitacoraExcepcion
-            End If
-        Catch ex As Exception
-            Throw New Excepciones.EliminarBitacoraExcepcion
-        End Try
-
-        Return result
-    End Function
-
-    Shared Function modificarBitacora(ByVal bit As BE.MensajeBitacoraBE, ByVal newIdiomaId As Integer) As Integer
-        Dim result As Integer
-
-        Dim repository As IRepositorio = RepositorioFactory.Create()
-        Try
-            repository.crearComando("MODIFICAR_BITACORA_SP")
-            repository.addParam("@idIdioma", newIdiomaId)
-            repository.addParam("@idBitBase", bit.idBase)
-            repository.addParam("@bitMensaje", bit.mensaje)
-            result = repository.executeSearchWithStatus
-            If (result <= 0) Then
-                Throw New Excepciones.ModificacionDeBitacoraExcepcion
-            End If
-        Catch ex As Exception
-            Throw New Excepciones.ModificacionDeBitacoraExcepcion
-        End Try
-
-        Return result
     End Function
 
 End Class

@@ -126,34 +126,10 @@
     <Compile Include="BuscarFamiliaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarFechaForm.Designer.vb">
-      <DependentUpon>BuscarFechaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarFechaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarIdiomaForm.Designer.vb">
-      <DependentUpon>BuscarIdiomaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarIdiomaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="BuscarOperaciones.Designer.vb">
       <DependentUpon>BuscarOperaciones.vb</DependentUpon>
     </Compile>
     <Compile Include="BuscarOperaciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarPromocionForm.Designer.vb">
-      <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarPromocionForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarSedeForm.Designer.vb">
-      <DependentUpon>BuscarSedeForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarSedeForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuscarVentaForm.Designer.vb">
@@ -163,9 +139,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controles\MyButton.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controles\MyChairButton.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controles\MyComboBox.vb">
@@ -182,60 +155,6 @@
     </Compile>
     <Compile Include="Controles\MyTextBox.vb">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BuscarSectorForm.Designer.vb">
-      <DependentUpon>BuscarSectorForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarSectorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarCompradorForm.Designer.vb">
-      <DependentUpon>GenerarCompradorForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarCompradorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarFechaForm.Designer.vb">
-      <DependentUpon>GenerarFechaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarFechaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarPromocionForm.Designer.vb">
-      <DependentUpon>GenerarPromocionForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarPromocionForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarSedeForm.Designer.vb">
-      <DependentUpon>GenerarSedeForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarSedeForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarShowForm.Designer.vb">
-      <DependentUpon>GenerarShowForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarShowForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarShowForm.Designer.vb">
-      <DependentUpon>BuscarShowForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarShowForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarSectorForm.Designer.vb">
-      <DependentUpon>GenerarSectorForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarSectorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarIdiomaForm.Designer.vb">
-      <DependentUpon>GenerarIdiomaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarIdiomaForm.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="GenerarPermisoUsuarioForm.Designer.vb">
       <DependentUpon>GenerarPermisoUsuarioForm.vb</DependentUpon>
@@ -259,12 +178,6 @@
       <DependentUpon>GenerarPermisoFamiliaForm.vb</DependentUpon>
     </Compile>
     <Compile Include="GenerarPermisoFamiliaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarUsuarioForm.Designer.vb">
-      <DependentUpon>GenerarUsuarioForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarUsuarioForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GenerarVentaForm.Designer.vb">
@@ -297,64 +210,16 @@
     <Compile Include="BaseForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarCompradorForm.Designer.vb">
-      <DependentUpon>ModificarCompradorForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarCompradorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ModificarFamiliaForm.Designer.vb">
       <DependentUpon>ModificarFamiliaForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ModificarFamiliaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarFechaForm.Designer.vb">
-      <DependentUpon>ModificarFechaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarFechaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarIdiomaForm.Designer.vb">
-      <DependentUpon>ModificarIdiomaForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarIdiomaForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ModificarOperacion.Designer.vb">
       <DependentUpon>ModificarOperacion.vb</DependentUpon>
     </Compile>
     <Compile Include="ModificarOperacion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarPromocionForm.Designer.vb">
-      <DependentUpon>ModificarPromocionForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarPromocionForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarSectorForm.Designer.vb">
-      <DependentUpon>ModificarSectorForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarSectorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarSedeForm.Designer.vb">
-      <DependentUpon>ModificarSedeForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarSedeForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarShowForm.Designer.vb">
-      <DependentUpon>ModificarShowForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarShowForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarUsuarioForm.Designer.vb">
-      <DependentUpon>ModificarUsuarioForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarUsuarioForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MyApplication.vb" />
@@ -429,41 +294,14 @@
     <EmbeddedResource Include="BuscarFamiliaForm.resx">
       <DependentUpon>BuscarFamiliaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarFechaForm.resx">
-      <DependentUpon>BuscarFechaForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarIdiomaForm.resx">
-      <DependentUpon>BuscarIdiomaForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BuscarOperaciones.resx">
       <DependentUpon>BuscarOperaciones.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarPromocionForm.resx">
-      <DependentUpon>BuscarPromocionForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarSectorForm.resx">
-      <DependentUpon>BuscarSectorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarSedeForm.resx">
-      <DependentUpon>BuscarSedeForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarShowForm.resx">
-      <DependentUpon>BuscarShowForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarVentaForm.resx">
       <DependentUpon>BuscarVentaForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\MyComboBox.resx">
       <DependentUpon>MyComboBox.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarCompradorForm.resx">
-      <DependentUpon>GenerarCompradorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarFechaForm.resx">
-      <DependentUpon>GenerarFechaForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarIdiomaForm.resx">
-      <DependentUpon>GenerarIdiomaForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerarPermisoFamiliaForm.resx">
       <DependentUpon>GenerarPermisoFamiliaForm.vb</DependentUpon>
@@ -477,21 +315,6 @@
     <EmbeddedResource Include="GenerarFamiliaForm.resx">
       <DependentUpon>GenerarFamiliaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenerarPromocionForm.resx">
-      <DependentUpon>GenerarPromocionForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarSectorForm.resx">
-      <DependentUpon>GenerarSectorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarSedeForm.resx">
-      <DependentUpon>GenerarSedeForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarShowForm.resx">
-      <DependentUpon>GenerarShowForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarUsuarioForm.resx">
-      <DependentUpon>GenerarUsuarioForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GenerarVentaForm.resx">
       <DependentUpon>GenerarVentaForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -504,32 +327,11 @@
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarCompradorForm.resx">
-      <DependentUpon>ModificarCompradorForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ModificarFamiliaForm.resx">
       <DependentUpon>ModificarFamiliaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarFechaForm.resx">
-      <DependentUpon>ModificarFechaForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarIdiomaForm.resx">
-      <DependentUpon>ModificarIdiomaForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ModificarOperacion.resx">
       <DependentUpon>ModificarOperacion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarPromocionForm.resx">
-      <DependentUpon>ModificarPromocionForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarSedeForm.resx">
-      <DependentUpon>ModificarSedeForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarShowForm.resx">
-      <DependentUpon>ModificarShowForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarUsuarioForm.resx">
-      <DependentUpon>ModificarUsuarioForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>

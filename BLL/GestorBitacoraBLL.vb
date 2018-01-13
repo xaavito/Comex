@@ -14,7 +14,7 @@
 
     Public Shared Function buscarBitacora(ByVal usr As BE.UsuarioBE,
                                           ByVal idTipo As Integer) As List(Of BE.BitacoraBE)
-        Return DAL.BitacoraDAL.buscarBitacora(usr, idTipo, New DateTime(2012, 9, 21), Actual.idioma)
+        Return DAL.BitacoraDAL.buscarBitacora(usr, idTipo, New DateTime(2012, 9, 21))
 
     End Function
 

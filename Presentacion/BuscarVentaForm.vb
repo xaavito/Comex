@@ -29,14 +29,14 @@
     End Sub
 
     Public Sub buscarVentas()
-        Try
-            VentasDataGrid.DataSource = BLL.GestorVentasBLL.buscarVenta(FechaDesdeTextBox.getDateTime,
-                                                                       FechaHastaTextBox.getDateTime,
-                                                                       VendedorComboBox.SelectedIndex)
-        Catch ex As Excepciones.VentasNoEncontradasExcepcion
-            My.Application.manejarExcepcion(ex)
-        Catch ex As Exception
-            My.Application.manejarExcepcion(ex)
-        End Try
+        'Try
+        '    VentasDataGrid.DataSource = BLL.GestorVentasBLL.buscarVenta(FechaDesdeTextBox.getDateTime,
+        '                                                               FechaHastaTextBox.getDateTime,
+        '                                                               VendedorComboBox.SelectedIndex)
+        'Catch ex As Excepciones.VentasNoEncontradasExcepcion
+        '    My.Application.manejarExcepcion(ex)
+        'Catch ex As Exception
+        '    My.Application.manejarExcepcion(ex)
+        'End Try
     End Sub
 End Class

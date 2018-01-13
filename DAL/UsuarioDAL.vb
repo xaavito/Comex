@@ -23,9 +23,7 @@
                 usuario.usuario = usr
                 usuario.password = pass
                 usuario.activo = pepe.Item(4)
-                Dim idioma As New BE.IdiomaBE
-                idioma.identificador = pepe.Item(3)
-                usuario.idioma = idioma
+
                 Return usuario
             Next
 
@@ -88,11 +86,8 @@
                 If Not IsDBNull(pepe.Item(6)) Then
                     usuario.fechaBaja = pepe.Item(6)
                 End If
-                Dim idioma As New BE.IdiomaBE
-                idioma.identificador = pepe.Item(7)
                 usuario.password = pepe.Item(8)
-                usuario.idioma = idioma
-                listaUsuarios.add(usuario)
+                listaUsuarios.Add(usuario)
             Next
 
         Catch ex As Exception
@@ -135,9 +130,9 @@
                 End If
 
                 If Not IsDBNull(pepe.Item(7)) Then
-                    Dim idioma As New BE.IdiomaBE
-                    idioma.identificador = pepe.Item(7)
-                    usuario.idioma = idioma
+                    'Dim idioma As New BE.IdiomaBE
+                    'idioma.identificador = pepe.Item(7)
+                    'usuario.idioma = idioma
                 End If
                 If Not IsDBNull(pepe.Item(8)) Then
                     usuario.password = pepe.Item(8)
@@ -151,7 +146,7 @@
         Return usuario
     End Function
 
-    Shared Function altaUsuario(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal idiomaBE As BE.IdiomaBE, ByVal list As List(Of BE.FamiliaBE)) As Integer
+    Shared Function altaUsuario(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal list As List(Of BE.FamiliaBE)) As Integer
         Dim result As Integer
         Dim retorno As Integer
 
@@ -163,7 +158,7 @@
             repository.addParam("@pass", p2)
             repository.addParam("@nom", p3)
             repository.addParam("@ape", p4)
-            repository.addParam("@idioma", idiomaBE.identificador)
+            'repository.addParam("@idioma", idiomaBE.identificador)
 
             retorno = repository.executeSearchWithReturnValue
             If (retorno <= 0) Then
@@ -213,9 +208,9 @@
         Return result
     End Function
 
-    Shared Function modificarUsuario(ByVal id As Integer, ByVal usr As String, ByVal pass As String, ByVal nom As String, ByVal ape As String, ByVal act As Integer, ByVal p7 As Integer, ByVal list As List(Of BE.FamiliaBE)) As Integer
+    Shared Function modificarUsuario(ByVal id As Integer, ByVal usr As String, ByVal pass As String, ByVal nom As String, ByVal ape As String, ByVal act As Integer, ByVal list As List(Of BE.FamiliaBE)) As Integer
         Dim result As Integer
-        
+
         Dim repository As IRepositorio = RepositorioFactory.Create()
         Try
             repository.crearComando("MODIFICAR_USUARIO_SP")
@@ -226,7 +221,7 @@
             repository.addParam("@nom", nom)
             repository.addParam("@ape", ape)
             repository.addParam("@act", act)
-            repository.addParam("@idioma", p7)
+            'repository.addParam("@idioma", p7)
 
             result = repository.executeSearchWithStatus
             If (result <= 0) Then
@@ -304,8 +299,7 @@
                                   ByVal p6 As String,
                                   ByVal p7 As String,
                                   ByVal p8 As Integer,
-                                  ByVal p9 As String,
-                                  ByVal p10 As List(Of BE.TipoShowBE)) As Integer
+                                  ByVal p9 As String) As Integer
         Dim result As Integer
         Dim retorno As Integer
 
@@ -328,17 +322,7 @@
                 Throw New Excepciones.InsertExcepcion
             End If
 
-            If (p10.Count > 0) Then
-                repository.crearComando("INSERTAR_USUARIO_PREFERENCIA_SP")
-                For Each pref As BE.TipoShowBE In p10
-                    repository.addParam("@idUsuario", retorno)
-                    repository.addParam("@idPreferencia", pref.identificador)
-                    result = repository.executeSearchWithStatus
-                    If (result <= 0) Then
-                        Throw New Excepciones.InsertExcepcion
-                    End If
-                Next
-            End If
+
             If (retorno > 0) Then
                 Throw New Excepciones.UsuarioCreadoExistosamente
             End If
@@ -368,7 +352,7 @@
         Return result
     End Function
 
-    Shared Function modificarComprador(ByVal p0 As Integer, ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As String, ByVal p7 As String, ByVal p8 As Integer, ByVal p9 As String, ByVal p10 As List(Of BE.TipoShowBE)) As Object
+    Shared Function modificarComprador(ByVal p0 As Integer, ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As String, ByVal p6 As String, ByVal p7 As String, ByVal p8 As Integer, ByVal p9 As String) As Object
         Throw New NotImplementedException
     End Function
 

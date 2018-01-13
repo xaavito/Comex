@@ -5,26 +5,6 @@ Public Class LoginForm
 
     Public Sub Start()
         Me.StartPosition = FormStartPosition.CenterScreen
-        Dim idiomas As List(Of BE.IdiomaBE) = Nothing
-
-        Try
-            idiomas = BLL.GestorIdiomaBLL.listarIdiomas("")
-        Catch ex As Excepciones.BitacoraNoEncontradaExcepcion
-            My.Application.manejarExcepcion(ex)
-        Catch ex As Excepciones.NoHayMensajesExcepcion
-            My.Application.manejarExcepcion(ex)
-        Catch ex As Excepciones.ExcepcionNoEncontradaExcepcion
-            My.Application.manejarExcepcion(ex)
-        Catch ex As Excepciones.ConexionImposibleExcepcion
-            My.Application.manejarExcepcion(ex)
-            Environment.Exit(1)
-        Catch ex As Exception
-            My.Application.manejarExcepcion(ex)
-        End Try
-
-        IdiomaComboBox.DataSource = idiomas
-        IdiomaComboBox.DisplayMember = "descripcion"
-        IdiomaComboBox.ValueMember = "identificador"
 
         UserTextBox.sinEspacio = True
         UserTextBox.alfanumerico = True
@@ -101,7 +81,7 @@ Public Class LoginForm
     End Sub
 
     Private Sub IdiomaComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IdiomaComboBox.SelectedIndexChanged
-        BLL.Actual.idioma = DirectCast(IdiomaComboBox.SelectedItem, BE.IdiomaBE)
+        'BLL.Actual.idioma = DirectCast(IdiomaComboBox.SelectedItem, BE.IdiomaBE)
         Me.setIdioma()
     End Sub
 
