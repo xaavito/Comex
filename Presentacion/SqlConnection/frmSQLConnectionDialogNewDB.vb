@@ -20,7 +20,8 @@ Public Class frmSQLConnectionDialogNewDB
         If Not String.IsNullOrEmpty(txtBase.Text) Then
             Cursor.Current = Cursors.WaitCursor
             Try
-                Dim slqman As New RepositorioSQLite()
+                Dim slqman As New RepositorioSQLInstalador
+
                 slqman.CreateDataBase(txtBase.Text, RootPath + "sql\Comex.sql", conn)
                 MessageBox.Show(String.Format("La base de datos '{0}' fue creada satisfactoriamente", txtBase.Text))
                 Me.Close()

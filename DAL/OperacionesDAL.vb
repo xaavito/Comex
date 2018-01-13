@@ -74,7 +74,37 @@
     'End Function
 
     Public Shared Function buscarOperaciones() As Object
-        Throw New NotImplementedException()
+        Dim table As DataTable
+
+        Dim lista As New List(Of BE.OperacionBE)
+
+        Dim repository As IRepositorio = RepositorioFactory.Create()
+        Try
+            repository.crearComando("BUSCAR_OPERACIONES_SP")
+
+            'repository.addParam("@fechaDesde", p1)
+            'repository.addParam("@fechaHasta", p2)
+            'repository.addParam("@vendedor", p5)
+            table = New DataTable
+            table = repository.executeSearchWithAdapter()
+            If (table.Rows.Count <= 0) Then
+                Throw New Excepciones.VentasNoEncontradasExcepcion
+            End If
+            For Each row As DataRow In table.Rows
+                Dim venta As New BE.OperacionBE
+                venta.identificador = row.Item(0)
+                'venta.total = row.Item(1)
+                'venta.comprador = DAL.UsuarioDAL.buscarUsuarioPorId(row.Item(2))
+                'venta.vendedor = DAL.UsuarioDAL.buscarUsuarioPorId(row.Item(3))
+                'venta.fecha = row.Item(4)
+                lista.Add(venta)
+            Next
+
+        Catch ex As Excepciones.VentasNoEncontradasExcepcion
+            Throw New Excepciones.VentasNoEncontradasExcepcion
+        End Try
+
+        Return lista
     End Function
 
     'Shared Function buscarVenta(ByVal p1 As Date, ByVal p2 As Date, ByVal p5 As Integer) As Object

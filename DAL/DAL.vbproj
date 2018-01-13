@@ -89,7 +89,6 @@
     <Compile Include="PermisoDAL.vb" />
     <Compile Include="RepositorioFactory.vb" />
     <Compile Include="RepositorioSQL.vb" />
-    <Compile Include="RepositorioSQLite.vb" />
     <Compile Include="RepositorioSQLInstalador.vb" />
     <Compile Include="RepositorioTransaccional.vb" />
     <Compile Include="UsuarioDAL.vb" />

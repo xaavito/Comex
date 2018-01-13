@@ -2,7 +2,7 @@
     Private Shared _connectionstring As String
 
     Public Shared Function Create() As IRepositorio
-        Dim repo As New RepositorioSQLite()
+        Dim repo As New RepositorioSQL
         Return repo
     End Function
 

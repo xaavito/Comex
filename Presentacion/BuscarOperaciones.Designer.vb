@@ -21,18 +21,17 @@ Partial Class BuscarOperaciones
     Private Sub InitializeComponent()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.NumeroOperacionLabel = New System.Windows.Forms.Label()
-        Me.ProveedorComboBox = New Comex.MyComboBox()
         Me.OperacionesDataGrid = New Comex.MyDataGrid()
-        Me.EliminarOperacionButton = New Comex.MyButton()
-        Me.ModificarOperacionButton = New Comex.MyButton()
-        Me.BuscarOperacionButton = New Comex.MyButton()
-        Me.AltaOperacionButton = New Comex.MyButton()
-        Me.NumeroOperacionTextBox = New Comex.MyTextBox()
         Me.IdentificadorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NroOperacionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TipoOperacionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProveedorColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MontoTotalColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EliminarOperacionButton = New Comex.MyButton()
+        Me.ModificarOperacionButton = New Comex.MyButton()
+        Me.BuscarOperacionButton = New Comex.MyButton()
+        Me.AltaOperacionButton = New Comex.MyButton()
+        Me.NumeroOperacionTextBox = New Comex.MyTextBox()
         CType(Me.OperacionesDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,19 +53,6 @@ Partial Class BuscarOperaciones
         Me.NumeroOperacionLabel.TabIndex = 50
         Me.NumeroOperacionLabel.Text = "Numero Operacion"
         '
-        'ProveedorComboBox
-        '
-        Me.ProveedorComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.ProveedorComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ProveedorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ProveedorComboBox.emptyItem = Nothing
-        Me.ProveedorComboBox.FormattingEnabled = True
-        Me.ProveedorComboBox.lista = Nothing
-        Me.ProveedorComboBox.Location = New System.Drawing.Point(128, 47)
-        Me.ProveedorComboBox.Name = "ProveedorComboBox"
-        Me.ProveedorComboBox.Size = New System.Drawing.Size(205, 21)
-        Me.ProveedorComboBox.TabIndex = 49
-        '
         'OperacionesDataGrid
         '
         Me.OperacionesDataGrid.AllowUserToAddRows = False
@@ -82,6 +68,42 @@ Partial Class BuscarOperaciones
         Me.OperacionesDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.OperacionesDataGrid.Size = New System.Drawing.Size(757, 237)
         Me.OperacionesDataGrid.TabIndex = 44
+        '
+        'IdentificadorColumn
+        '
+        Me.IdentificadorColumn.DataPropertyName = "identificador"
+        Me.IdentificadorColumn.HeaderText = "Identificador"
+        Me.IdentificadorColumn.Name = "IdentificadorColumn"
+        Me.IdentificadorColumn.ReadOnly = True
+        Me.IdentificadorColumn.Visible = False
+        '
+        'NroOperacionColumn
+        '
+        Me.NroOperacionColumn.DataPropertyName = "nroOperacion"
+        Me.NroOperacionColumn.HeaderText = "Nro Operacion"
+        Me.NroOperacionColumn.Name = "NroOperacionColumn"
+        Me.NroOperacionColumn.ReadOnly = True
+        '
+        'TipoOperacionColumn
+        '
+        Me.TipoOperacionColumn.DataPropertyName = "tipoOperacion"
+        Me.TipoOperacionColumn.HeaderText = "Tipo Operacion"
+        Me.TipoOperacionColumn.Name = "TipoOperacionColumn"
+        Me.TipoOperacionColumn.ReadOnly = True
+        '
+        'ProveedorColumn
+        '
+        Me.ProveedorColumn.DataPropertyName = "proveedor"
+        Me.ProveedorColumn.HeaderText = "Proveedor"
+        Me.ProveedorColumn.Name = "ProveedorColumn"
+        Me.ProveedorColumn.ReadOnly = True
+        '
+        'MontoTotalColumn
+        '
+        Me.MontoTotalColumn.DataPropertyName = "montoTotal"
+        Me.MontoTotalColumn.HeaderText = "MontoTotal"
+        Me.MontoTotalColumn.Name = "MontoTotalColumn"
+        Me.MontoTotalColumn.ReadOnly = True
         '
         'EliminarOperacionButton
         '
@@ -145,42 +167,6 @@ Partial Class BuscarOperaciones
         Me.NumeroOperacionTextBox.TabIndex = 53
         Me.NumeroOperacionTextBox.texto = False
         '
-        'IdentificadorColumn
-        '
-        Me.IdentificadorColumn.DataPropertyName = "identificador"
-        Me.IdentificadorColumn.HeaderText = "Identificador"
-        Me.IdentificadorColumn.Name = "IdentificadorColumn"
-        Me.IdentificadorColumn.ReadOnly = True
-        Me.IdentificadorColumn.Visible = False
-        '
-        'NroOperacionColumn
-        '
-        Me.NroOperacionColumn.DataPropertyName = "nroOperacion"
-        Me.NroOperacionColumn.HeaderText = "Nro Operacion"
-        Me.NroOperacionColumn.Name = "NroOperacionColumn"
-        Me.NroOperacionColumn.ReadOnly = True
-        '
-        'TipoOperacionColumn
-        '
-        Me.TipoOperacionColumn.DataPropertyName = "tipoOperacion"
-        Me.TipoOperacionColumn.HeaderText = "Tipo Operacion"
-        Me.TipoOperacionColumn.Name = "TipoOperacionColumn"
-        Me.TipoOperacionColumn.ReadOnly = True
-        '
-        'ProveedorColumn
-        '
-        Me.ProveedorColumn.DataPropertyName = "proveedor"
-        Me.ProveedorColumn.HeaderText = "Proveedor"
-        Me.ProveedorColumn.Name = "ProveedorColumn"
-        Me.ProveedorColumn.ReadOnly = True
-        '
-        'MontoTotalColumn
-        '
-        Me.MontoTotalColumn.DataPropertyName = "montoTotal"
-        Me.MontoTotalColumn.HeaderText = "MontoTotal"
-        Me.MontoTotalColumn.Name = "MontoTotalColumn"
-        Me.MontoTotalColumn.ReadOnly = True
-        '
         'BuscarOperaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -189,7 +175,6 @@ Partial Class BuscarOperaciones
         Me.Controls.Add(Me.AltaOperacionButton)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.NumeroOperacionLabel)
-        Me.Controls.Add(Me.ProveedorComboBox)
         Me.Controls.Add(Me.EliminarOperacionButton)
         Me.Controls.Add(Me.ModificarOperacionButton)
         Me.Controls.Add(Me.OperacionesDataGrid)
@@ -204,7 +189,6 @@ Partial Class BuscarOperaciones
 
     Friend WithEvents Label4 As Label
     Friend WithEvents NumeroOperacionLabel As Label
-    Friend WithEvents ProveedorComboBox As MyComboBox
     Friend WithEvents EliminarOperacionButton As MyButton
     Friend WithEvents ModificarOperacionButton As MyButton
     Friend WithEvents OperacionesDataGrid As MyDataGrid

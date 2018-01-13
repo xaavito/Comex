@@ -61,7 +61,7 @@ Public Class Principal
     End Sub
 
     Private Sub BuscarVentaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarVenta.Click
-        Dim form As New BuscarVentaForm
+        Dim form As New BuscarOperaciones
         form.MdiParent = Me
         form.Show()
     End Sub

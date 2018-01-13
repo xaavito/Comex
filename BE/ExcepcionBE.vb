@@ -25,9 +25,10 @@
     End Property
 
     Public Function clonar() As Object Implements IClonable.clonar
-        Dim newObj As New ExcepcionBE
-        newObj.mensaje = Me.mensaje
-        newObj.codigo = Me.codigo
+        Dim newObj As New ExcepcionBE With {
+            .mensaje = Me.mensaje,
+            .codigo = Me.codigo
+        }
         Return newObj
     End Function
 End Class
