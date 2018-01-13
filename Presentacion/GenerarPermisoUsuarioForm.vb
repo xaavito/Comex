@@ -80,9 +80,10 @@
         Dim listaPermisos = New List(Of BE.PermisoBE)
         Dim p As BE.PermisoBE
         For Each row As DataGridViewRow In PermisosUsuarioDataGrid.Rows
-            p = New BE.PermisoBE
-            p.identificador = row.Cells(0).Value
-            p.descripcion = row.Cells(1).Value
+            p = New BE.PermisoBE With {
+                .identificador = row.Cells(0).Value,
+                .descripcion = row.Cells(1).Value
+            }
             listaPermisos.Add(p)
         Next
         Return listaPermisos
