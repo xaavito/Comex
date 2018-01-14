@@ -88,4 +88,11 @@ Public Class LoginForm
     Private Sub Login_FormClosed(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.FormClosing
         Me.DialogResult = Windows.Forms.DialogResult.Cancel
     End Sub
+
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim test As String
+
+
+    End Sub
 End Class

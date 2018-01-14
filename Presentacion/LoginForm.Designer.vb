@@ -25,9 +25,9 @@ Partial Class LoginForm
         Me.UsuarioLabel = New System.Windows.Forms.Label()
         Me.PassLabel = New System.Windows.Forms.Label()
         Me.CambiarIdiomaLabel = New System.Windows.Forms.Label()
-        Me.IdiomaComboBox = New MyComboBox()
-        Me.AceptarButton = New MyButton()
-        Me.CancelarButton = New MyButton()
+        Me.IdiomaComboBox = New Comex.MyComboBox()
+        Me.AceptarButton = New Comex.MyButton()
+        Me.CancelarButton = New Comex.MyButton()
         Me.SuspendLayout()
         '
         'UserTextBox
@@ -35,21 +35,29 @@ Partial Class LoginForm
         Me.UserTextBox.alfanumerico = False
         Me.UserTextBox.boton = Nothing
         Me.UserTextBox.Location = New System.Drawing.Point(127, 12)
+        Me.UserTextBox.mail = False
+        Me.UserTextBox.nada = False
         Me.UserTextBox.Name = "UserTextBox"
+        Me.UserTextBox.numerico = False
         Me.UserTextBox.sinEspacio = False
         Me.UserTextBox.Size = New System.Drawing.Size(100, 20)
         Me.UserTextBox.TabIndex = 0
+        Me.UserTextBox.texto = False
         '
         'PassTextBox
         '
         Me.PassTextBox.alfanumerico = False
         Me.PassTextBox.boton = Nothing
         Me.PassTextBox.Location = New System.Drawing.Point(127, 44)
+        Me.PassTextBox.mail = False
+        Me.PassTextBox.nada = False
         Me.PassTextBox.Name = "PassTextBox"
+        Me.PassTextBox.numerico = False
         Me.PassTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PassTextBox.sinEspacio = False
         Me.PassTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PassTextBox.TabIndex = 1
+        Me.PassTextBox.texto = False
         Me.PassTextBox.UseSystemPasswordChar = True
         '
         'UsuarioLabel
@@ -81,7 +89,10 @@ Partial Class LoginForm
         '
         'IdiomaComboBox
         '
+        Me.IdiomaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.IdiomaComboBox.emptyItem = Nothing
         Me.IdiomaComboBox.FormattingEnabled = True
+        Me.IdiomaComboBox.lista = Nothing
         Me.IdiomaComboBox.Location = New System.Drawing.Point(161, 118)
         Me.IdiomaComboBox.Name = "IdiomaComboBox"
         Me.IdiomaComboBox.Size = New System.Drawing.Size(130, 21)
@@ -134,8 +145,7 @@ Partial Class LoginForm
     Friend WithEvents UsuarioLabel As System.Windows.Forms.Label
     Friend WithEvents PassLabel As System.Windows.Forms.Label
     Friend WithEvents CambiarIdiomaLabel As System.Windows.Forms.Label
-    Friend WithEvents IdiomaComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents AceptarButton As System.Windows.Forms.Button
-    Friend WithEvents CancelarButton As System.Windows.Forms.Button
-
+    Friend WithEvents IdiomaComboBox As MyComboBox
+    Friend WithEvents AceptarButton As MyButton
+    Friend WithEvents CancelarButton As MyButton
 End Class
